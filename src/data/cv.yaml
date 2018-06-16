@@ -1,0 +1,171 @@
+name:
+  first: Vincent
+  last: Houba
+phone: 0499316358
+pseudo: edil3ra
+email: houbavince@gmail.com
+pdf: /data/cv.pdf
+src: https://github.com/edil3ra/cv
+url: "edil3ra.github.io"
+social:
+  github: edil3ra
+  linkedin: vincent-houba
+# Erdős  number is at most 4.
+# (Brandon Amos -> Layne Watson -> Leroy Kelly -> Zoltán Füredi -> Paul Erdős )
+
+# LaTeX formatting.
+style: classic # casual, classic, oldstyle, or banking
+color: orange # blue, orange, green, red, purple, grey and black
+color2: '0.25,0.25,0.25' # Make the font under the name a darker grey.
+
+# (tag, section type, title)
+order:
+  - [about, About]
+  - [industry, Industry Experience]
+  - [education, Education]
+  - [skills, Skills]
+  - [projects, Projects]
+
+about: '
+I am a fullstack developer with very good knowledge of python, react and aws.
+I am very passionate developer, I spend most of my free times experimenting with new framework, technologies
+I am interested in backend and front end.
+I am very familiar with git, docker, aws, vagrant, linux.
+I have good knowlege of sql and no sql database
+
+I built a bot for tinder and happn.
+I built a website for a lawer firm in django.
+I built a blog with nikola(python).
+I built some 2d video games in typescript and javascript.
+
+I spend a lot of time reading and listening podacst about technologies, developement, cloud computing...
+I keep in touch with the last trending tech like graphql...
+I have some knowledge in data analyst, web scrapping, machine learning, (familarity with numpy, pandas, skitlearn).
+'
+
+
+
+education:
+  - school: Formation zf2
+    dates: jun 2015 -- july 2015
+    details:
+     - POO & Design Patterns, Tests Unitaires et ZendFramwork
+
+  - school: STE-Formations
+    degree: Java cloud computing
+    dates: Aug 2014 -- May 2015
+    details:
+     - Diging deep into design pattern in java
+     - Algorithm course on paper  
+     - Sql database analyse
+     - Advanced sql with postgresql (view, trigger, creating function )
+     - Building a sudoku
+
+  - school: IPSF
+    degree: Bac+2 Web developer
+    dates: Aug 2012 -- May 2014
+    details:
+    - Learning html, css, jquery, php, mysql, wordpress (first year)
+    - learning poo, symfony2, version control (second year)
+    - Building website for asbl in symfony2 (second year)
+    - Creating a site for lawfirm with python(django) (final)
+
+
+industry:
+  - place: Faktory
+    location: Belgium
+    title: Full stack developer
+    dates: June 2016 - Aout 2017
+    details:
+      - name: P-heal
+        items:
+          - Working on an iot device that calculate weight variations and blinking to help to take theirs peals
+          - Create a mobile application with react-native for the device
+          - Refactor the backend to aws using serverless
+      - name: Bdm
+        items:
+          - Create a recommendation engine for a broadcaster.
+          - Built a microservice to extract content from video.
+          - Test the recommendation engine with unitetest and behave.
+          - Searching for solution to improve the recommendation engine (tf/idf, elasticsearch).
+          - Create a cache system with redis to avoid collecting and fetching the same data.
+          - Collect data on users (time spended on article, time spend watching a video...) to rate articles and videos.
+          - Python, kafka, aiohttp, sql, behave, unittest, react, docker, redis, pyspark, pandas
+  - place: Vesperia
+    location: Luxembourg
+    title: Full stack developer
+    dates: June 2016 - Aout 2017
+    details:
+      - name: Doctena
+        items: 
+          - Make their mail responsive with ljml
+          - Resolve Visual bugfix
+      - name: Logdirect
+        items:
+         - Refactor front end code for different site, with jquery, gulp, css
+         - unittest made home framework with nodejs            
+      - name: atHome
+        items: 
+          - Bulding static analyse tools with typescript (made home framework)
+
+  - place: Vous.lu
+    location: Luxembourg
+    title: Web developer Intern
+    dates: Jan 2015 - Mars 2015
+    detail:
+      - I built a website with php(no framework).
+      - Improve website for mobile displaying.
+      - Testing differents tools to make animation in js/css3
+
+
+projects:
+  website:
+    name: Personal Blog and Website
+    url: http://bamos.github.io
+    details:
+      - Hosted on GitHub Pages. Uses {\bf Markdown} for posts and {\bf Jekyll}
+          for static HTML generation.
+      - '{\bf 42 posts} across the following tags,
+        listed by highest frequency.'
+      - Python, Bash, Linux, LaTeX, Fortran, Android, Scala, News,
+        JavaScript, Zsh, C++, OpenMP, Lua, Make, Mathematica, mpv
+  github:
+    name: GitHub Portfolio
+    url: http://github.com/bamos
+    details:
+      - Hosts code samples, original source code, and patches for
+        open source projects.
+      - 25 original repositories, 5 forked repositories.
+
+skills:
+  - title: Languages
+    details:
+      - name: C++ 
+        level: 1
+      - name: Fortran 
+        level: 1
+      - name: Haskell 
+        level: 1
+      - name: Java
+        level: 1
+      - name: Lua 
+        level: 1
+      - name: Make 
+        level: 1
+      - name: Mathematica}
+        level: 1
+      - name: Python  
+        level: 1
+      - name: R 
+        level: 1
+      - name: Scala
+        level: 1
+
+  - title: Systems
+    details:
+      - name: Linux
+        level: 1
+      - name: mac
+        level: 1
+
+
