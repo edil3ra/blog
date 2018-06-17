@@ -228,7 +228,7 @@ skills:
     details:
      - name: Aws
        level: 3
-     - name: Google cloud(firebase)
+     - name: Google cloud
        level: 2
      - name: Emacs
        level: 4
@@ -240,18 +240,18 @@ skills:
        level: 4
      - name: Jira
        level: 2
-     - name: github
+     - name: Github
        level: 2
-     - name: gitlab
+     - name: Gitlab
        level: 2
-     - name: bitbucket
+     - name: Bitbucket
        level: 2
   - title: Os
     details:
      - name: Debian, ubuntu
        level: 4
-     - name: arch linux
+     - name: Arch linux
        level: 2
-     - name: redhat
+     - name: Redhat
        level: 1
       

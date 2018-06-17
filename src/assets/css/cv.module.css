@@ -1,0 +1,58 @@
+.card-wrapper {
+    margin-bottom: 3em;
+    background-color: #fbfbf0;
+    border-radius: 10px;
+}
+
+.ul-wrapper {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.card {
+    width: 131px;                 /* Set width of cards */
+    overflow: hidden;             /* Fixes the corners */
+    float: left;
+    display: flex;                /* Children use Flexbox */
+    flex-direction: column;       /* Rotate Axis */
+}
+
+
+.item-image {
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    margin-bottom: 0;
+}
+
+.card-top {
+    /* text-align: center; */
+}
+
+.card-main {
+    /* text-align: center; */
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.card-bottom {
+    
+}
+
+
+
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1.44em;
+}
+
+.up-rating {
+    color: red;
+}

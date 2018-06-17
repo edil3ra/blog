@@ -5,8 +5,8 @@ import lawtonTheme from "typography-theme-lawton";
 
 
 
-const typography = new Typography(grandViewTheme);
-// const typography = new Typography(bootstrapTheme);
+// const typography = new Typography(grandViewTheme);
+const typography = new Typography(bootstrapTheme);
 // const typography = new Typography(lawtonTheme)
 
 
