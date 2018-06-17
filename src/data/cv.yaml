@@ -140,32 +140,124 @@ projects:
 skills:
   - title: Languages
     details:
-      - name: C++ 
-        level: 1
-      - name: Fortran 
-        level: 1
-      - name: Haskell 
-        level: 1
-      - name: Java
-        level: 1
-      - name: Lua 
-        level: 1
-      - name: Make 
-        level: 1
-      - name: Mathematica}
-        level: 1
-      - name: Python  
-        level: 1
-      - name: R 
-        level: 1
-      - name: Scala
-        level: 1
-
+     - name: Python
+       level: 4
+     - name: Elisp
+       level: 2 
+     - name: Node
+       level: 2
+     - name: Ruby
+       level: 2 
+     - name: Elixir
+       level: 1
+     - name: Php
+       level: 1 
+     - name: Java
+       level: 1
+     - name: Clojure
+       level: 1
+     - name: javascript (es6)
+       level: 3
+     - name: typescript
+       level: 2
+  - title: Framework python
+    details:
+     - name: Django
+       level: 3
+     - name: Flask
+       level: 1
+     - name: nikola
+       level: 2
+     - name: aiohttp
+       level: 1
+  - title: Framework javascript
+    details:
+     - name: React
+       level: 3
+     - name: Redux
+       level: 3
+     - name: React native
+       level: 3
+     - name: jquery
+       level: 2
+     - name: angular
+       level: 1
+  - title: Integrations
+    details:
+     - name: Css
+       level: 1
+     - name: Sass
+       level: 1
+     - name: Foundation
+       level: 1
+     - name: Bootstrap
+       level: 1
+     - name: Materialize
+       level: 1
+  - title: Build tools
+    details:
+     - name: Webapck
+       level: 3
+     - name: Brunch
+       level: 2
+     - name: Gulp
+       level: 2
+     - name: Grunt
+       level: 2
+  - title: Servers
+    details:
+     - name: Nginx
+       level: 2
+     - name: Apache
+       level: 2
+  - title: Databases
+    details:
+     - name: postgresql
+       level: 3
+     - name: mysql
+       level: 2
+     - name: sqlite
+       level: 2
+     - name: Mongo
+       level: 2
+     - name: Redis
+       level: 3
+     - name: dynamodb
+       level: 3
   - title: Systems
     details:
       - name: Linux
         level: 1
       - name: mac
         level: 1
-
-
+  - title: Tools
+    details:
+     - name: Aws
+       level: 3
+     - name: google cloud(firebase)
+       level: 2
+     - name: Emacs
+       level: 4
+     - name: Docker
+       level: 3
+     - name: Vagrant
+       level: 2
+     - name: Git
+       level: 4
+     - name: Jira
+       level: 2
+     - name: github
+       level: 2
+     - name: gitlab
+       level: 2
+     - name: bitbucket
+       level: 2
+  - title: Os
+    details:
+     - name: Debian, ubuntu
+       level: 4
+     - name: arch linux
+       level: 2
+     - name: redhat
+       level: 1
+        

@@ -56,6 +56,7 @@ const CvPage = ({ data }) => {
     <div>
       <div>
         {educationR}
+        {skillR}
       </div>
     </div>
   )
