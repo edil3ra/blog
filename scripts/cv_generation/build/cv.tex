@@ -1,0 +1,318 @@
+\documentclass[11pt,letter,sans]{moderncv}
+\DeclareOldFontCommand{\rm}{\normalfont\rmfamily}{\mathrm}
+\DeclareOldFontCommand{\sf}{\normalfont\sffamily}{\mathsf}
+\DeclareOldFontCommand{\tt}{\normalfont\ttfamily}{\mathtt}
+\DeclareOldFontCommand{\bf}{\normalfont\bfseries}{\mathbf}
+\DeclareOldFontCommand{\it}{\normalfont\itshape}{\mathit}
+\DeclareOldFontCommand{\sl}{\normalfont\slshape}{\@nomath\sl}
+\DeclareOldFontCommand{\sc}{\normalfont\scshape}{\@nomath\sc}
+\DeclareRobustCommand*\cal{\@fontswitch\relax\mathcal}
+\DeclareRobustCommand*\mit{\@fontswitch\relax\mathnormal}
+
+
+\moderncvstyle{banking}
+\moderncvcolor{blue}
+\definecolor{color2}{rgb}{0.25,0.25,0.25}
+%\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage[top=1in, bottom=1in, left=1.1in, right=1.1in]{geometry}
+\setlength{\hintscolumnwidth}{3cm}
+%\setlength{\makecvtitlenamewidth}{10cm}
+
+\frenchspacing
+
+\usepackage[backend=biber,style=ieee,defernumbers=true]{biblatex}
+
+% Make the author's name bold in publications.
+\DeclareNameFormat{author}{%
+  \ifthenelse{\equal{#1}{Amos}}%
+    {\textbf{\ifblank{#4}{}{#4\space}#1}}%
+    {\ifblank{#4}{}{#4\space}#1}%
+  \ifthenelse{\value{listcount}=1 \AND \value{liststop}=2}%
+    {\space and\space}
+    {\ifthenelse{\value{listcount}<\value{liststop}}%
+      {\addcomma\space}
+      {}
+    }
+}
+
+\usepackage{lastpage}
+\cfoot{\addressfont\textcolor{gray}{Page \thepage\ of \pageref{LastPage}}}
+
+\AtEndPreamble{\hypersetup{pdftitle={CV -- Brandon Amos}}}
+\name{Brandon}{Amos}
+%\title{Resumé title}
+%\address{street and number}{postcode city}{country}
+\phone{~(540)~947~1238}
+\email{bamos@cs.cmu.edu}
+\homepage{bamos.github.io}
+\social[linkedin]{bdamos}
+\social[twitter]{brandondamos}
+\social[github]{bamos}
+\extrainfo{\small Generated on \today}
+%\photo[64pt][0.4pt]{picture}
+% \quote{Generated on \today}
+
+\AtBeginDocument{\hypersetup{colorlinks}}
+
+\begin{document}
+\hypersetup{linkcolor=color0,urlcolor=color1}
+\makecvtitle
+
+\vspace{-7mm}
+\section{Education}
+  \begin{itemize}
+      \item Carnegie Mellon University, \hfill Aug 2014 -- Present
+      \begin{itemize}
+\end{itemize}
+      \item Carnegie Mellon University, \hfill Aug 2014 -- May 2016
+      \begin{itemize}
+\end{itemize}
+      \item Virginia Tech, \hfill Aug 2011 -- May 2014
+      \begin{itemize}
+\end{itemize}
+      \item Northside High School (Roanoke, Virginia), \hfill May 2011
+      \begin{itemize}
+\end{itemize}
+  \end{itemize}
+
+
+\section{Research Experience}
+        \cvlistitem{
+          Carnegie Mellon University, Zico Kolter \hfill Apr 2016 -- Present
+          \begin{itemize}
+          \item Machine learning and optimization
+          \end{itemize}
+        }
+        \cvlistitem{
+          Intel Labs, Vladlen Koltun \hfill June 2018 - Sept 2018
+          \begin{itemize}
+          \item Machine learning
+          \end{itemize}
+        }
+        \cvlistitem{
+          Google DeepMind, Nando de Freitas \hfill May 2017 -- Oct 2017
+          \begin{itemize}
+          \item Machine and reinforcement learning
+          \end{itemize}
+        }
+        \cvlistitem{
+          Carnegie Mellon University, Mahadev Satyanarayanan \hfill Aug 2014 -- Apr 2016
+          \begin{itemize}
+          \item Applied machine learning and mobile systems
+          \end{itemize}
+        }
+        \cvlistitem{
+          Virginia Tech, Jules White \hfill May 2012 -- May 2014
+          \begin{itemize}
+          \item Mobile systems, cyber-physical systems, and security
+          \end{itemize}
+        }
+        \cvlistitem{
+          Virginia Tech, Layne Watson \hfill Jan 2013 -- May 2014
+          \begin{itemize}
+          \item Scientific computing, global/stochastic optimization, and bioinformatics
+          \end{itemize}
+        }
+        \cvlistitem{
+          Virginia Tech, Binoy Ravindran \hfill Nov 2012 -- Mar 2014
+          \begin{itemize}
+          \item Heterogeneous compilers
+          \end{itemize}
+        }
+
+
+\section{Selected Publications}
+\vspace{-6mm}
+\hfill
+Google Scholar ID:
+\href{https://scholar.google.com/citations?user=d8gdZR4AAAAJ}{d8gdZR4AAAAJ}
+\vspace{2mm}
+
+\renewcommand*{\bibfont}{\small}
+
+\begin{refsection}[publications/selected.bib]
+\nocite{*}
+\printbibliography[heading=none,prefixnumbers=]
+\end{refsection}
+
+
+\section{Teaching Experience}
+        \cvlistitem{
+          Graduate AI
+          (CMU 15-780),
+          TA
+          \hfill
+          S2017
+        }
+        \cvlistitem{
+          Distributed Systems
+          (CMU 15-440/640),
+          TA
+          \hfill
+          S2016
+        }
+        \cvlistitem{
+          Software Design and Data Structures
+          (VT CS 2114),
+          TA
+          \hfill
+          S2013
+        }
+
+
+\section{Industry Experience}
+  \begin{itemize}
+      \item Data Scientist Intern, Adobe Research\hfill May 2014 -- Aug 2014
+      \begin{itemize}
+            \item I built a web analytics processing engine using {\bf Scala}, {\bf Spark}, {\bf Spray}, {\bf Parquet}, and {\bf HDFS}. 
+\end{itemize}
+      \item Software Engineer Intern, Snowplow Analytics\hfill Dec 2013 -- Jan 2014
+      \begin{itemize}
+            \item Open-source {\bf Scala} development with a startup on the Snowplow analytics platform. My commits are online at \url{https://github.com/snowplow/snowplow/commits?author=bamos}. 
+            \item Developed a new server using {\bf Spray} and {\bf Actors} to store {\bf Thrift} events on {\bf Amazon Kinesis}. 
+\end{itemize}
+      \item Software Engineer Intern, Qualcomm\hfill May 2013 -- Aug 2013
+      \begin{itemize}
+            \item I created a specification format language translator for fuzz testing with Python. 
+\end{itemize}
+      \item Software Engineer Intern, Phoenix Integration\hfill May 2012 -- Aug 2012
+      \begin{itemize}
+            \item I developed industry software for software integration and design process optimization in {\bf VC++}, {\bf VC\#}, and {\bf Java}. 
+\end{itemize}
+      \item Network Administrator Intern, Sunapsys\hfill Jan 2011 -- Aug 2011
+      \begin{itemize}
+            \item Internship in high school to replace Windows domain, mail, DHCP, and DNS servers with virtual {\bf Linux} servers using {\bf KVM} and {\bf virsh}. 
+\end{itemize}
+  \end{itemize}
+
+
+\section{CMU Graduate Coursework}
+\cvlistitem{
+    Statistical Machine Learning (10-702, Au),
+    L. Wasserman
+    \hfill
+    S2017
+}
+\cvlistitem{
+    Deep Reinforcement Learning (10-703, Au),
+    R. Salakhutdinov and A. Fragkiadaki
+    \hfill
+    S2017
+}
+\cvlistitem{
+    Intermediate Statistics (10-705, Au),
+    L. Wasserman
+    \hfill
+    F2016
+}
+\cvlistitem{
+    Topics in Deep Learning (10-807),
+    R. Salakhutdinov
+    \hfill
+    F2016
+}
+\cvlistitem{
+    Convex Optimization (10-725),
+    R. J. Tibshirani
+    \hfill
+    F2015
+}
+\cvlistitem{
+    Algorithms in the Real World (15-853),
+    G. Blelloch and A. Gupta
+    \hfill
+    F2015
+}
+\cvlistitem{
+    Semantics of Programming Languages (15-812),
+    A. Platzer
+    \hfill
+    S2015
+}
+\cvlistitem{
+    Optimizing Compilers for Modern Architecture (15-745),
+    T. Mowry
+    \hfill
+    S2015
+}
+\cvlistitem{
+    Advanced Operating and Distributed Systems (15-712),
+    D. Andersen
+    \hfill
+    F2014
+}
+\cvlistitem{
+    Mobile and Pervasive Computing (15-812),
+    M. Satyanarayanan and D. Siewiorek
+    \hfill
+    F2014
+}
+
+
+\section{Honors \& Awards}
+\begin{itemize}
+    \item NSF Graduate Research Fellowship \hfill 2016 -- 2019
+    \item 1st Place Undergraduate Senior Capstone Award, Virginia Tech Computer Science \hfill 2014
+    \item David Heilman Research Award, Virginia Tech Computer Science \hfill 2014
+    \item Senior Scholar Award, Virginia Tech Computer Science \hfill 2014
+    \item Honorable Mention, CRA Outstanding Undergraduate Researcher Award \hfill 2014
+    \item Awarded eight undergraduate merit scholarships \hfill 2011 -- 2014
+\end{itemize}
+
+
+\section{Skills}
+\begin{tabular}{p{1in}p{5in}}
+    Languages & C, C++, Fortran, Haskell, Java, Lua, Make, {\it Mathematica}, Python, R, Scala \\
+    Frameworks & Akka, NumPy, Pandas, PyTorch, SciPy, TensorFlow, Torch7 \\
+    Systems & Linux, OSX \\
+\end{tabular}
+
+
+
+
+\newpage
+\section{All Publications}
+\vspace{-6mm}
+\hfill
+Google Scholar ID:
+\href{https://scholar.google.com/citations?user=d8gdZR4AAAAJ}{d8gdZR4AAAAJ}
+\vspace{2mm}
+
+\renewcommand*{\bibfont}{\small}
+
+\subsection{Preprints and Tech Reports}
+\begin{refsection}[publications/tech-reports.bib]
+\nocite{*}
+\printbibliography[heading=none,prefixnumbers=P]
+\end{refsection}
+\subsection{Conference Proceedings}
+\begin{refsection}[publications/conference.bib]
+\nocite{*}
+\printbibliography[heading=none,prefixnumbers=C]
+\end{refsection}
+\subsection{Journal Articles}
+\begin{refsection}[publications/journal.bib]
+\nocite{*}
+\printbibliography[heading=none,prefixnumbers=J]
+\end{refsection}
+\subsection{Workshop, Symposium, and Short Papers}
+\begin{refsection}[publications/short.bib]
+\nocite{*}
+\printbibliography[heading=none,prefixnumbers=W]
+\end{refsection}
+\subsection{Magazine Articles}
+\begin{refsection}[publications/magazine.bib]
+\nocite{*}
+\printbibliography[heading=none,prefixnumbers=M]
+\end{refsection}
+\subsection{Posters}
+\begin{refsection}[publications/posters.bib]
+\nocite{*}
+\printbibliography[heading=none,prefixnumbers=S]
+\end{refsection}
+
+
+
+
+\end{document}
