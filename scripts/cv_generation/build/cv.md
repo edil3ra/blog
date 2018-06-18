@@ -7,7 +7,7 @@ I spend a lot of time reading and listening podacst about technologies, develope
 ## <i class="fa fa-chevron-right"></i> Industry Experience
 <table class="table table-hover">
 <tr>
-  <td class='col-md-3'>June 2016 - Aout 2017</td>
+  <td class='col-md-3'>Aout 2017 - Today</td>
   <td><strong>Faktory</strong>, Full stack developer</td>
 </tr>
 <tr>
@@ -60,19 +60,19 @@ I spend a lot of time reading and listening podacst about technologies, develope
 <tr>
   <td class='col-md-2'>Languages</td>
   <td markdown="1">
-[{'name': 'Python', 'level': 4}, {'name': 'Elisp', 'level': 2}, {'name': 'Node', 'level': 2}, {'name': 'Ruby', 'level': 2}, {'name': 'Elixir', 'level': 1}, {'name': 'Php', 'level': 1}, {'name': 'Java', 'level': 1}, {'name': 'Clojure', 'level': 1}, {'name': 'javascript (es6)', 'level': 3}, {'name': 'typescript', 'level': 2}]
+[{'name': 'Python', 'level': 5}, {'name': 'Javascript (es6)', 'level': 4}, {'name': 'Elisp', 'level': 2}, {'name': 'Node', 'level': 2}, {'name': 'Ruby', 'level': 2}, {'name': 'Elixir', 'level': 1}, {'name': 'Php', 'level': 1}, {'name': 'Java', 'level': 1}, {'name': 'Clojure', 'level': 1}, {'name': 'Typescript', 'level': 2}]
   </td>
 </tr>
 <tr>
   <td class='col-md-2'>Framework python</td>
   <td markdown="1">
-[{'name': 'Django', 'level': 3}, {'name': 'Flask', 'level': 1}, {'name': 'nikola', 'level': 2}, {'name': 'aiohttp', 'level': 1}]
+[{'name': 'Django', 'level': 3}, {'name': 'Flask', 'level': 1}, {'name': 'Nikola', 'level': 2}, {'name': 'Aiohttp', 'level': 1}]
   </td>
 </tr>
 <tr>
   <td class='col-md-2'>Framework javascript</td>
   <td markdown="1">
-[{'name': 'React', 'level': 3}, {'name': 'Redux', 'level': 3}, {'name': 'React native', 'level': 3}, {'name': 'jquery', 'level': 2}, {'name': 'angular', 'level': 1}]
+[{'name': 'React', 'level': 3}, {'name': 'Redux', 'level': 3}, {'name': 'React native', 'level': 3}, {'name': 'Jquery', 'level': 2}, {'name': 'Angular', 'level': 2}, {'name': 'Gatsby', 'level': 2}]
   </td>
 </tr>
 <tr>
@@ -96,19 +96,19 @@ I spend a lot of time reading and listening podacst about technologies, develope
 <tr>
   <td class='col-md-2'>Databases</td>
   <td markdown="1">
-[{'name': 'postgresql', 'level': 3}, {'name': 'mysql', 'level': 2}, {'name': 'sqlite', 'level': 2}, {'name': 'Mongo', 'level': 2}, {'name': 'Redis', 'level': 3}, {'name': 'dynamodb', 'level': 3}]
+[{'name': 'Postgresql', 'level': 3}, {'name': 'Mysql', 'level': 2}, {'name': 'Sqlite', 'level': 2}, {'name': 'Mongo', 'level': 2}, {'name': 'Redis', 'level': 3}, {'name': 'Dynamodb', 'level': 3}]
   </td>
 </tr>
 <tr>
   <td class='col-md-2'>Tools</td>
   <td markdown="1">
-[{'name': 'Aws', 'level': 3}, {'name': 'google cloud(firebase)', 'level': 2}, {'name': 'Emacs', 'level': 4}, {'name': 'Docker', 'level': 3}, {'name': 'Vagrant', 'level': 2}, {'name': 'Git', 'level': 4}, {'name': 'Jira', 'level': 2}, {'name': 'github', 'level': 2}, {'name': 'gitlab', 'level': 2}, {'name': 'bitbucket', 'level': 2}]
+[{'name': 'Aws', 'level': 3}, {'name': 'Google cloud', 'level': 2}, {'name': 'Emacs', 'level': 4}, {'name': 'Docker', 'level': 3}, {'name': 'Vagrant', 'level': 2}, {'name': 'Git', 'level': 4}, {'name': 'Jira', 'level': 2}, {'name': 'Github', 'level': 2}, {'name': 'Gitlab', 'level': 2}, {'name': 'Bitbucket', 'level': 2}]
   </td>
 </tr>
 <tr>
   <td class='col-md-2'>Os</td>
   <td markdown="1">
-[{'name': 'Debian, ubuntu', 'level': 4}, {'name': 'arch linux', 'level': 2}, {'name': 'redhat', 'level': 1}]
+[{'name': 'Ubuntu', 'level': 3}, {'name': 'Debian', 'level': 3}, {'name': 'Arch', 'level': 3}, {'name': 'Redhat', 'level': 1}]
   </td>
 </tr>
 </table>

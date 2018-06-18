@@ -1,7 +1,98 @@
+h2 {
+    font-size: 2.4em;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.8em;
+    color: #777;
+}
+
+h4 {
+    font-size: 1.1em;
+    color: #555;
+}
+
+h5 {
+    font-size: 1em;
+    color: #000;
+}
+
+
+.skills-wrapper {
+    /* background-color: #fafafa; */
+}
+
+.educations-wrapper {
+    /* background-color: #fafafa; */
+}
+
+.industries-wrapper {
+    /* background-color: #fafafa; */
+}
+
+.industry-items {
+    margin-bottom: 3em;
+}
+
+.industry-header {
+    overflow: hidden;
+    /* float: left; */
+    border-bottom: 1px solid #ddd;
+    padding: 0;
+    margin-bottom: 1em;
+}
+
+.industry-left {
+    float: left
+}
+
+.industry-header h3{
+    overflow: hidden;
+    float: left;
+    margin: 0;
+}
+
+.location {
+    font-style: italic;
+    color: #999;
+    margin-left: 0.5em;
+    margin-top: 0.5em;
+    float: right
+}
+
+.date {
+    float: right;
+    margin-top: 0.5em;
+}
+
+.education-items {
+    margin-bottom: 3em;
+}
+
+.education-header {
+    overflow: hidden;
+    border-bottom: 1px solid #ddd;
+    padding: 0;
+    margin-bottom: 1em;
+}
+
+.education-header h3{
+    float: left;
+    margin: 0;
+}
+
+.education-header span{
+    float: right;
+    margin-top: 0.5em;
+}
+
 .card-wrapper {
     margin-bottom: 3em;
-    background-color: #fbfbf0;
     border-radius: 10px;
+}
+.card-wrapper h3 {
+    border-bottom: 1px solid #ddd;
 }
 
 .ul-wrapper {
@@ -12,18 +103,24 @@
 }
 
 .card {
-    width: 131px;                 /* Set width of cards */
+    width: 147px;                 /* Set width of cards */
     overflow: hidden;             /* Fixes the corners */
     float: left;
     display: flex;                /* Children use Flexbox */
     flex-direction: column;       /* Rotate Axis */
+    /* border: 1px solid bla */
+    box-shadow: 1px 1px 4px grey;
+    padding: 4px;
+    margin: 3px;
+    border-radius: 2px;
+    background-color: #fff;
 }
 
 
 .item-image {
     width: 120px;
     height: 120px;
-    margin: auto;
+
     margin-bottom: 0;
 }
 
@@ -36,10 +133,11 @@
     /* text-align: center; */
     margin-bottom: 0;
     padding-bottom: 0;
+    margin: auto;
 }
 
 .card-bottom {
-    
+    margin: auto;
 }
 
 
@@ -57,3 +155,17 @@
 .up-rating {
     color: red;
 }
+
+
+.socials {
+    overflow: hidden;
+}
+
+.socials div{
+    float: left;
+    margin: 0;
+    padding: 0;
+    margin-left: -10px;
+}
+
+

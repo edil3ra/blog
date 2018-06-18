@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2018.6.14)  17 JUN 2018 18:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2018.6.14)  18 JUN 2018 23:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1230,11 +1230,11 @@ l'.
 
  ) 
 Here is how much of TeX's memory you used:
- 35580 strings out of 492982
- 665406 string characters out of 6138579
- 1085417 words of memory out of 5000000
+ 35582 strings out of 492982
+ 665430 string characters out of 6138579
+ 1085569 words of memory out of 5000000
  38667 multiletter control sequences out of 15000+600000
- 581859 words of font info for 70 fonts, out of 8000000 for 9000
+ 581960 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  69i,12n,60p,10440b,775s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf-dis
@@ -1244,7 +1244,7 @@ mf-dist/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf-dist/fonts/type1/pub
 lic/lm/lmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsso10.pfb></
 usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fo
 nts/type1/public/marvosym/marvosym.pfb>
-Output written on scripts/cv_generation/build/cv.pdf (3 pages, 123946 bytes).
+Output written on scripts/cv_generation/build/cv.pdf (3 pages, 124456 bytes).
 PDF statistics:
  77 PDF objects out of 1000 (max. 8388607)
  64 compressed objects within 1 object stream

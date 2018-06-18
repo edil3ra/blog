@@ -3,59 +3,61 @@ import Link from 'gatsby-link'
 import styles from '../assets/css/cv.module.css'
 
 import blank from '../assets/images/blank.jpg'
-import logoAiohttp  from '../assets/images/aiohttp-logo.png'
-import logoAngular  from '../assets/images/angular-logo.png'
-import logoApache  from '../assets/images/apache-logo.jpg'
-import logoArch  from '../assets/images/archlinux-logo.jpg'
-import logoAws  from '../assets/images/aws-logo.png'
-import logoBitbucket  from '../assets/images/bitbucket-logo.jpeg'
-import logoBootstrap  from '../assets/images/bootstrap-logo.jpg'
-import logoBrunch  from '../assets/images/brunch-logo.png'
-import logoClojure  from '../assets/images/clojure-logo.png'
-import logoCss  from '../assets/images/css3-logo.png'
-import logoDebian  from '../assets/images/debian-logo.jpg'
-import logoDjango  from '../assets/images/django-logo.png'
-import logoDocker  from '../assets/images/docker-logo.png'
-import logoDynamodb  from '../assets/images/dynamodb-logo.jpg'
-import logoElisp  from '../assets/images/lisp-logo.png'
-import logoElixir  from '../assets/images/elixir-logo.png'
-import logoEmacs  from '../assets/images/emacs-logo.png'
-import logoFlask  from '../assets/images/flask-logo.jpg'
-import logoFoundation  from '../assets/images/foundation-logo.png'
-import logoGit  from '../assets/images/git-logo.png'
-import logoGithub  from '../assets/images/github-logo.png'
-import logoGitlab  from '../assets/images/gitlab-logo.png'
-import logoGooglecloud  from '../assets/images/googlecloud-logo.jpg'
-import logoGrunt  from '../assets/images/grunt-logo.png'
-import logoGulp  from '../assets/images/gulp-logo.png'
-import logoJava  from '../assets/images/java-logo.png'
-import logoJavascript  from '../assets/images/javascript-logo.png'
-import logoJira  from '../assets/images/jira-logo.png'
-import logoJquery  from '../assets/images/jquery-logo.gif'
-import logoMaterialize  from '../assets/images/materialize-logo.png'
-import logoMongo  from '../assets/images/mongo-logo.png'
-import logoMysql  from '../assets/images/mysql-logo.png'
-import logoNginx  from '../assets/images/nginx-logo.png'
-import logoNikola  from '../assets/images/nikola-logo.png'
-import logoNode  from '../assets/images/nodejs-logo.jpg'
-import logoPhp  from '../assets/images/php-logo.png'
-import logoPostgresql  from '../assets/images/postgresql-logo.png'
-import logoPython  from '../assets/images/python-logo.png'
-import logoReact  from '../assets/images/react-logo.png'
-import logoReactNative  from '../assets/images/react-native-logo.png'
-import logoRedhat  from '../assets/images/redhat-logo.png'
-import logoRedis  from '../assets/images/redis-logo.png'
-import logoRedux  from '../assets/images/redux-logo.png'
-import logoRuby  from '../assets/images/ruby-logo.png'
-import logoSass  from '../assets/images/sass-logo.png'
-import logoSqlite  from '../assets/images/sqlite-logo.jpeg'
-import logoTypescript  from '../assets/images/typescript-logo.png'
-import logoUbuntu  from '../assets/images/ubuntu-logo.jpg'
-import logoVagrant  from '../assets/images/vagrant-logo.png'
-import logoWebpack  from '../assets/images/webpack-logo.png'
+import logoAiohttp from '../assets/images/aiohttp-logo.png'
+import logoAngular from '../assets/images/angular-logo.png'
+import logoApache from '../assets/images/apache-logo.jpg'
+import logoArch from '../assets/images/archlinux-logo.jpg'
+import logoAws from '../assets/images/aws-logo.png'
+import logoBitbucket from '../assets/images/bitbucket-logo.jpeg'
+import logoBootstrap from '../assets/images/bootstrap-logo.jpg'
+import logoBrunch from '../assets/images/brunch-logo.png'
+import logoClojure from '../assets/images/clojure-logo.png'
+import logoCss from '../assets/images/css3-logo.png'
+import logoDebian from '../assets/images/debian-logo.jpg'
+import logoDjango from '../assets/images/django-logo.png'
+import logoDocker from '../assets/images/docker-logo.png'
+import logoDynamodb from '../assets/images/dynamodb-logo.jpg'
+import logoElisp from '../assets/images/lisp-logo.png'
+import logoElixir from '../assets/images/elixir-logo.png'
+import logoEmacs from '../assets/images/emacs-logo.png'
+import logoFlask from '../assets/images/flask-logo.jpg'
+import logoFoundation from '../assets/images/foundation-logo.png'
+import logoGatsby from '../assets/images/gatsby-logo.png'
+import logoGit from '../assets/images/git-logo.png'
+import logoGithub from '../assets/images/github-logo.png'
+import logoGitlab from '../assets/images/gitlab-logo.png'
+import logoGooglecloud from '../assets/images/googlecloud-logo.jpg'
+import logoGrunt from '../assets/images/grunt-logo.png'
+import logoGulp from '../assets/images/gulp-logo.png'
+import logoJava from '../assets/images/java-logo.png'
+import logoJavascript from '../assets/images/javascript-logo.png'
+import logoJira from '../assets/images/jira-logo.png'
+import logoJquery from '../assets/images/jquery-logo.gif'
+import logoMaterialize from '../assets/images/materialize-logo.png'
+import logoMongo from '../assets/images/mongo-logo.png'
+import logoMysql from '../assets/images/mysql-logo.png'
+import logoNginx from '../assets/images/nginx-logo.png'
+import logoNikola from '../assets/images/nikola-logo.png'
+import logoNode from '../assets/images/nodejs-logo.jpg'
+import logoPhp from '../assets/images/php-logo.png'
+import logoPostgresql from '../assets/images/postgresql-logo.png'
+import logoPython from '../assets/images/python-logo.png'
+import logoReact from '../assets/images/react-logo.png'
+import logoReactNative from '../assets/images/react-native-logo.png'
+import logoRedhat from '../assets/images/redhat-logo.png'
+import logoRedis from '../assets/images/redis-logo.png'
+import logoRedux from '../assets/images/redux-logo.png'
+import logoRuby from '../assets/images/ruby-logo.png'
+import logoSass from '../assets/images/sass-logo.png'
+import logoSqlite from '../assets/images/sqlite-logo.jpeg'
+import logoTypescript from '../assets/images/typescript-logo.png'
+import logoUbuntu from '../assets/images/ubuntu-logo.jpg'
+import logoVagrant from '../assets/images/vagrant-logo.png'
+import logoWebpack from '../assets/images/webpack-logo.png'
+import socialLinkedin from '../assets/images/linkedin-social.jpg'
+import socialGithub from '../assets/images/github-social.png'
 
-
-const skillToImage = (name) => {
+const skillToImage = name => {
   const icons = [
     { name: 'Aiohttp', img: logoAiohttp },
     { name: 'Angular', img: logoAngular },
@@ -76,6 +78,7 @@ const skillToImage = (name) => {
     { name: 'Emacs', img: logoEmacs },
     { name: 'Flask', img: logoFlask },
     { name: 'Foundation', img: logoFoundation },
+    { name: 'Gatsby', img: logoGatsby },
     { name: 'Git', img: logoGit },
     { name: 'Github', img: logoGithub },
     { name: 'Gitlab', img: logoGitlab },
@@ -108,17 +111,16 @@ const skillToImage = (name) => {
     { name: 'Vagrant', img: logoVagrant },
     { name: 'Webapck', img: logoWebpack },
   ]
-  const icon = icons.filter((x) => x.name === name)
-  if(icon.length == 1) {
+  const icon = icons.filter(x => x.name === name)
+  if (icon.length == 1) {
     return icon[0].img
   } else {
     return blank
   }
 }
 
-
 const CvPage = ({ data }) => {
-  const renderRatingToText = (level)  => {
+  const renderRatingToText = level => {
     const down = 5 - level
     const up = level
 
@@ -127,9 +129,7 @@ const CvPage = ({ data }) => {
     })
 
     const upRender = Array.from(Array(up).keys()).map(() => {
-      return (
-        <span className={styles['up-rating']}>☆</span>
-      )
+      return <span className={styles['up-rating']}>☆</span>
     })
 
     return (
@@ -139,8 +139,6 @@ const CvPage = ({ data }) => {
       </div>
     )
   }
-
-
 
   const cv = data.dataYaml
   const infoR = (
@@ -152,9 +150,9 @@ const CvPage = ({ data }) => {
   )
 
   const socialR = (
-    <div>
-      <div> {cv.social.github} </div>
-      <div> {cv.social.linkedin} </div>
+    <div className={styles['socials']}>
+      <div><a href={cv.social.linkedin}><img alt="" src={socialLinkedin}/></a></div>
+      <div><a href={cv.social.github}><img alt="" src={socialGithub}/></a></div>
     </div>
   )
 
@@ -162,16 +160,16 @@ const CvPage = ({ data }) => {
     const detailsR = details.map(({ name, level }) => {
       return (
         <li className={styles['card']}>
-          <div className={styles['card-top']}>
-            {name}
-          </div>
+          <div className={styles['card-top']}>{name}</div>
           <div className={styles['card-main']}>
-            <img className={styles['item-image']} alt="" src={skillToImage(name)}/>
+            <img
+              className={styles['item-image']}
+              alt=""
+              src={skillToImage(name)}
+            />
           </div>
           <div className={styles['card-bottom']}>
-            <div className={styles['rating']}>
-              {renderRatingToText(level)}
-            </div>
+            <div className={styles['rating']}>{renderRatingToText(level)}</div>
           </div>
         </li>
       )
@@ -184,26 +182,87 @@ const CvPage = ({ data }) => {
     )
   })
 
-  const educationR = cv.education.map(({school, dates, details}) => {
-    const detailsR = details.map((item) => {
-      return (
-        <li>{item}</li>
-      )
+  const educationR = cv.education.map(({ school, dates, details }) => {
+    const detailsR = details.map(item => {
+      return <li>{item}</li>
     })
     return (
-      <div>
-        <div>{school}</div>
-        <div>{dates}</div>
+      <div className={styles['education-items']}>
+        <div className={styles['education-header']}>
+          <h3>{school}</h3> <span>{dates}</span>
+        </div>
         <ul>{detailsR}</ul>
       </div>
     )
   })
 
+  const industryR = cv.industry.map(
+    ({ place, location, title, dates, detail, details }) => {
+      let detailsR = null
+
+      if (detail != null) {
+        detailsR = (
+          <ul>
+            {' '}
+            {detail.map(item => {
+              return <li>{item}</li>
+            })}
+          </ul>
+        )
+      } else {
+        detailsR = (
+          <div>
+            {' '}
+            {details.map(({ name, items }) => {
+              return (
+                <div>
+                  <h5>{name}</h5>
+                  <ul>
+                    {items.map(item => {
+                      return <li>{item}</li>
+                    })}
+                  </ul>
+                </div>
+              )
+            })}
+          </div>
+        )
+      }
+
+      console.log(detailsR)
+      return (
+        <div className={styles['industry-items']}>
+          <div className={styles['industry-header']}>
+            <div className={styles['industry-left']}>
+              <h3>{place}</h3>{' '}
+              <span className={styles['location']}>({location})</span>
+            </div>
+            <span className={styles['date']}>{dates}</span>
+          </div>
+          <h4>{title}</h4>
+          <div>{detailsR}</div>
+        </div>
+      )
+    }
+  )
+
   return (
     <div>
-      <div>
+      <div className={styles['industries-wrapper']}>
+        <h2>Industry</h2>
+        {industryR}
+      </div>
+      <div className={styles['educations-wrapper']}>
+        <h2>Education</h2>
         {educationR}
+      </div>
+      <div className={styles['skills-wrapper']}>
+        <h2>Skills</h2>
         {skillR}
+      </div>
+      <div className={styles['socials-wrapper']}>
+        <h2>Socials</h2>
+        {socialR}
       </div>
     </div>
   )

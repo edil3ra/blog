@@ -6,10 +6,10 @@ pseudo: edil3ra
 email: houbavince@gmail.com
 pdf: /data/cv.pdf
 src: https://github.com/edil3ra/cv
-url: "edil3ra.github.io"
+url: "https://silly-mclean-010d02.netlify.com"
 social:
-  github: edil3ra
-  linkedin: vincent-houba
+  github: https://github.com/edil3ra
+  linkedin: https://www.linkedin.com/in/vincent-houba-866525b6/
 # Erdős  number is at most 4.
 # (Brandon Amos -> Layne Watson -> Leroy Kelly -> Zoltán Füredi -> Paul Erdős )
 
@@ -75,13 +75,13 @@ industry:
   - place: Faktory
     location: Belgium
     title: Full stack developer
-    dates: June 2016 - Aout 2017
+    dates: Aout 2017 - Today
     details:
       - name: P-heal
         items:
-          - Working on an iot device that calculate weight variations and blinking to help to take theirs peals
-          - Create a mobile application with react-native for the device
-          - Refactor the backend to aws using serverless
+          - Working on an iot device that calculate weight variations and blinking to help people take theirs medicaments
+          - Create a mobile application with react-native for the p-heal device
+          - Refactor the backend to aws with serverless
       - name: Bdm
         items:
           - Create a recommendation engine for a broadcaster.
@@ -178,10 +178,12 @@ skills:
        level: 3
      - name: React native
        level: 3
-     - name: jquery
+     - name: Jquery
        level: 2
      - name: Angular
-       level: 1
+       level: 2
+     - name: Gatsby
+       level: 2
   - title: Integrations
     details:
      - name: Css
