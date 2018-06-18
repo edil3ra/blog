@@ -248,10 +248,12 @@ skills:
        level: 2
   - title: Os
     details:
-     - name: Debian, ubuntu
-       level: 4
-     - name: Arch linux
-       level: 2
+     - name: Ubuntu
+       level: 3
+     - name: Debian
+       level: 3
+     - name: Arch
+       level: 3
      - name: Redhat
        level: 1
       
