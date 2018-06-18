@@ -27,6 +27,7 @@ def build_cv_info(c, filename=None):
     c.run(' '.join([PATH_CV_PROGRAM, cv_file_path]))
 
 
+
 @task
 def build_pdf(c):
     c.run(' '.join([
@@ -50,3 +51,9 @@ def build_pdf(c):
 @task(clean, build_cv_info, build_pdf)
 def build_cv(c):
     print('building cv')
+
+
+@task
+def deploy(c):
+    '''deploy no netify'''
+    c.run('curl -X POST -d \'\' https://api.netlify.com/build_hooks/5b2772ff11b73b6c1326c650')
