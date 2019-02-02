@@ -1,5 +1,6 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import Layout from "../components/layout"
+import SEO from "../components/seo"
 import styles from '../assets/css/cv.module.css'
 
 import blank from '../assets/images/blank.jpg'
@@ -112,7 +113,7 @@ const skillToImage = name => {
     { name: 'Webapck', img: logoWebpack },
   ]
   const icon = icons.filter(x => x.name === name)
-  if (icon.length == 1) {
+  if (icon.length === 1) {
     return icon[0].img
   } else {
     return blank
@@ -141,14 +142,6 @@ const CvPage = ({ data }) => {
   }
 
   const cv = data.dataYaml
-  const infoR = (
-    <div>
-      <div> {cv.url} </div>
-      <div> {cv.src} </div>
-      <div> {cv.pdf} </div>
-    </div>
-  )
-
   const socialR = (
     <div className={styles['socials']}>
       <div><a href={cv.social.linkedin}><img alt="" src={socialLinkedin}/></a></div>
@@ -229,7 +222,6 @@ const CvPage = ({ data }) => {
         )
       }
 
-      console.log(detailsR)
       return (
         <div className={styles['industry-items']}>
           <div className={styles['industry-header']}>
@@ -247,24 +239,27 @@ const CvPage = ({ data }) => {
   )
 
   return (
-    <div>
-      <div className={styles['industries-wrapper']}>
-        <h2>Industry</h2>
-        {industryR}
+    <Layout>
+      <SEO title="Home" keywords={[`cv`, `curcium vitale`, `software developer`, `Vincent houba`, 'houba vincent']} />
+      <div>
+        <div className={styles['industries-wrapper']}>
+          <h2>Industry</h2>
+          {industryR}
+        </div>
+        <div className={styles['educations-wrapper']}>
+          <h2>Education</h2>
+          {educationR}
+        </div>
+        <div className={styles['skills-wrapper']}>
+          <h2>Skills</h2>
+          {skillR}
+        </div>
+        <div className={styles['socials-wrapper']}>
+          <h2>Socials</h2>
+          {socialR}
+        </div>
       </div>
-      <div className={styles['educations-wrapper']}>
-        <h2>Education</h2>
-        {educationR}
-      </div>
-      <div className={styles['skills-wrapper']}>
-        <h2>Skills</h2>
-        {skillR}
-      </div>
-      <div className={styles['socials-wrapper']}>
-        <h2>Socials</h2>
-        {socialR}
-      </div>
-    </div>
+    </Layout>
   )
 }
 

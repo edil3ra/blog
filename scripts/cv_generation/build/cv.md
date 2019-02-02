@@ -72,7 +72,7 @@ I spend a lot of time reading and listening podacst about technologies, develope
 <tr>
   <td class='col-md-2'>Framework javascript</td>
   <td markdown="1">
-[{'name': 'React', 'level': 3}, {'name': 'Redux', 'level': 3}, {'name': 'React native', 'level': 3}, {'name': 'Jquery', 'level': 2}, {'name': 'Angular', 'level': 2}, {'name': 'Gatsby', 'level': 2}]
+[{'name': 'Vue', 'level': 5}, {'name': 'quasar', 'lever': 4}, {'name': 'React', 'level': 3}, {'name': 'Redux', 'level': 3}, {'name': 'React native', 'level': 3}, {'name': 'Jquery', 'level': 2}, {'name': 'Angular', 'level': 2}, {'name': 'Gatsby', 'level': 2}]
   </td>
 </tr>
 <tr>

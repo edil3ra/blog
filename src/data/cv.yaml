@@ -172,6 +172,10 @@ skills:
        level: 1
   - title: Framework javascript
     details:
+     - name: Vue
+       level: 5
+     - name: quasar
+       lever: 4
      - name: React
        level: 3
      - name: Redux

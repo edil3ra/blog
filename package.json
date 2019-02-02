@@ -1,18 +1,28 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "edil3ra_blog",
+  "description": "edil3ra blog",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "edil3ra ",
   "dependencies": {
-    "gatsby": "^1.9.247",
-    "gatsby-link": "^1.6.40",
-    "gatsby-plugin-react-helmet": "^2.0.10",
-    "gatsby-plugin-typography": "^1.7.18",
-    "gatsby-source-filesystem": "^1.5.38",
-    "gatsby-transformer-yaml": "^1.5.17",
+    "gatsby": "^2.0.0",
+    "gatsby-image": "^2.0.5",
+    "gatsby-plugin-google-analytics": "^2.0.5",
+    "gatsby-plugin-offline": "^2.0.5",
+    "gatsby-plugin-react-helmet": "^3.0.5",
+    "gatsby-plugin-manifest": "^2.0.17",
+    "gatsby-plugin-sharp": "^2.0.5",
+    "gatsby-plugin-typography": "^2.2.0",
+    "gatsby-source-drupal": "^3.0.0",
+    "gatsby-source-filesystem": "^2.0.1",
+    "gatsby-transformer-sharp": "^2.1.1",
+    "gatsby-transformer-yaml": "^2.1.7",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
     "react-helmet": "^5.2.0",
-    "typography-theme-bootstrap": "^0.16.7",
-    "typography-theme-grand-view": "^0.15.10"
+    "react-typography": "^0.16.13",
+    "typography": "^0.15.8",
+    "typography-theme-bootstrap": "^0.16.18",
+    "typography-theme-grand-view": "^0.16.18"
   },
   "keywords": [
     "gatsby"
@@ -26,7 +36,8 @@
   },
   "devDependencies": {
     "babel-plugin-transform-runtime": "^6.0.0",
-    "prettier": "^1.12.0"
+    "babel-preset-es2015": "^6.24.1",
+    "prettier": "^1.16.3"
   },
   "repository": {
     "type": "git",
