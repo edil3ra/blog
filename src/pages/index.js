@@ -1,17 +1,28 @@
 import React from "react"
-import { Link } from "gatsby"
+import { StaticQuery, graphql, Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
+  <StaticQuery
+    query={graphql`
+      query IndexQuery {
+        site {
+          siteMetadata {
+            description
+          }
+        }
+      }
+    `}
+    render={data => (
+      <Layout>
+        <SEO title="Home" keywords={[`edil3ra`, `Home`, `software developer`]} />
+        <div dangerouslySetInnerHTML={{__html: data.site.siteMetadata.description}} />
+        <Link to="cv"> CV </Link>
+      </Layout>
+    )}
+  />
 )
 
 export default IndexPage
