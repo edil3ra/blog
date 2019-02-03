@@ -121,16 +121,17 @@ const skillToImage = name => {
 }
 
 const CvPage = ({ data }) => {
+
   const renderRatingToText = level => {
     const down = 5 - level
     const up = level
 
-    const downRender = Array.from(Array(down).keys()).map(() => {
-      return <span>☆</span>
+    const downRender = Array.from(Array(down).keys()).map((down) => {
+      return <span key={down}>☆</span>
     })
 
-    const upRender = Array.from(Array(up).keys()).map(() => {
-      return <span className={styles['up-rating']}>☆</span>
+    const upRender = Array.from(Array(up).keys()).map((up) => {
+      return <span key={up} className={styles['up-rating']}>☆</span>
     })
 
     return (
@@ -149,10 +150,10 @@ const CvPage = ({ data }) => {
     </div>
   )
 
-  const skillR = cv.skills.map(({ title, details }) => {
+  const skillR = cv.skills.map(({ title, details }, index) => {
     const detailsR = details.map(({ name, level }) => {
       return (
-        <li className={styles['card']}>
+        <li key={`${title}-${name}`} className={styles['card']}>
           <div className={styles['card-top']}>{name}</div>
           <div className={styles['card-main']}>
             <img
@@ -168,19 +169,19 @@ const CvPage = ({ data }) => {
       )
     })
     return (
-      <div className={styles['card-wrapper']}>
+      <div key={index} className={styles['card-wrapper']}>
         <h3>{title}</h3>
         <ul className={styles['ul-wrapper']}>{detailsR}</ul>
       </div>
     )
   })
 
-  const educationR = cv.education.map(({ school, dates, details }) => {
+  const educationR = cv.education.map(({ school, dates, details }, index) => {
     const detailsR = details.map(item => {
-      return <li>{item}</li>
+      return <li key={item}>{item}</li>
     })
     return (
-      <div className={styles['education-items']}>
+      <div key={index} className={styles['education-items']}>
         <div className={styles['education-header']}>
           <h3>{school}</h3> <span>{dates}</span>
         </div>
@@ -190,7 +191,7 @@ const CvPage = ({ data }) => {
   })
 
   const industryR = cv.industry.map(
-    ({ place, location, title, dates, detail, details }) => {
+    ({ place, location, title, dates, detail, details }, index) => {
       let detailsR = null
 
       if (detail != null) {
@@ -198,7 +199,7 @@ const CvPage = ({ data }) => {
           <ul>
             {' '}
             {detail.map(item => {
-              return <li>{item}</li>
+              return <li key={item}>{item}</li>
             })}
           </ul>
         )
@@ -208,11 +209,11 @@ const CvPage = ({ data }) => {
             {' '}
             {details.map(({ name, items }) => {
               return (
-                <div>
+                <div key={name}>
                   <h5>{name}</h5>
                   <ul>
                     {items.map(item => {
-                      return <li>{item}</li>
+                      return <li key={item}>{item}</li>
                     })}
                   </ul>
                 </div>
@@ -223,7 +224,7 @@ const CvPage = ({ data }) => {
       }
 
       return (
-        <div className={styles['industry-items']}>
+        <div key={index} className={styles['industry-items']}>
           <div className={styles['industry-header']}>
             <div className={styles['industry-left']}>
               <h3>{place}</h3>{' '}
@@ -267,7 +268,7 @@ export default CvPage
 
 export const query = graphql`
   query CvQuery {
-    dataYaml(id: { regex: "/cv.yaml/" }) {
+    dataYaml {
       name {
         first
         last

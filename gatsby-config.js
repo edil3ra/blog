@@ -29,8 +29,7 @@ I Love to learn new programmingn languages, I have basic knowdledge in a lot of 
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `data`,
-        path: `${__dirname}/src/data/`,
+        path: `${__dirname}/src/data`,
       },
     },
     {
