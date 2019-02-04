@@ -241,7 +241,7 @@ const CvPage = ({ data }) => {
       )
     }
   )
-  window.styles = styles
+  
   return (
     <Layout>
       <SEO title="Home" keywords={[`cv`, `curcium vitale`, `software developer`, `Vincent houba`, 'houba vincent']} />
