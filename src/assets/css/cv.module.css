@@ -21,6 +21,12 @@ h5 {
 
 .skills-wrapper {
     /* background-color: #fafafa; */
+    overflow: hidden;
+}
+
+.skills-wrapper ul {
+    overflow: hidden;
+    margin: 0
 }
 
 .educations-wrapper {
@@ -33,6 +39,7 @@ h5 {
 
 .industry-items {
     margin-bottom: 3em;
+    overflow: hidden;
 }
 
 .industry-header {
@@ -103,12 +110,13 @@ h5 {
 }
 
 .card {
-    width: 147px;                 /* Set width of cards */
+    width: 179px;                 /* Set width of cards */
+    /* height: 200px;                 /\* Set width of cards *\/ */
     overflow: hidden;             /* Fixes the corners */
     float: left;
     display: flex;                /* Children use Flexbox */
     flex-direction: column;       /* Rotate Axis */
-    /* border: 1px solid bla */
+    border: 1px solid bla;
     box-shadow: 1px 1px 4px grey;
     padding: 4px;
     margin: 3px;
@@ -127,6 +135,7 @@ h5 {
 .card-top {
     text-align: center;
     font-size: 1.1em;
+    color: red;
 }
 
 .card-main {
@@ -139,7 +148,6 @@ h5 {
 .card-bottom {
     margin: auto;
 }
-
 
 
 .rating {
@@ -155,7 +163,6 @@ h5 {
 .up-rating {
     color: red;
 }
-
 
 .socials {
     overflow: hidden;

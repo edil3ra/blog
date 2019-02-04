@@ -55,6 +55,8 @@ import logoTypescript from '../assets/images/typescript-logo.png'
 import logoUbuntu from '../assets/images/ubuntu-logo.jpg'
 import logoVagrant from '../assets/images/vagrant-logo.png'
 import logoWebpack from '../assets/images/webpack-logo.png'
+import logoVue from '../assets/images/vue-logo.png'
+import logoQuasar from '../assets/images/quasar-logo.png'
 import socialLinkedin from '../assets/images/linkedin-social.jpg'
 import socialGithub from '../assets/images/github-social.png'
 
@@ -105,11 +107,13 @@ const skillToImage = name => {
     { name: 'Redis', img: logoRedis },
     { name: 'Redux', img: logoRedux },
     { name: 'Ruby', img: logoRuby },
+    { name: 'Quasar', img: logoQuasar },
     { name: 'Sass', img: logoSass },
     { name: 'Sqlite', img: logoSqlite },
     { name: 'Typescript', img: logoTypescript },
     { name: 'Ubuntu', img: logoUbuntu },
     { name: 'Vagrant', img: logoVagrant },
+    { name: 'Vue', img: logoVue },
     { name: 'Webapck', img: logoWebpack },
   ]
   const icon = icons.filter(x => x.name === name)
@@ -121,7 +125,6 @@ const skillToImage = name => {
 }
 
 const CvPage = ({ data }) => {
-
   const renderRatingToText = level => {
     const down = 5 - level
     const up = level
@@ -131,7 +134,7 @@ const CvPage = ({ data }) => {
     })
 
     const upRender = Array.from(Array(up).keys()).map((up) => {
-      return <span key={up} className={styles['up-rating']}>☆</span>
+      return <span key={up} className={styles['upRating']}>☆</span>
     })
 
     return (
@@ -154,24 +157,24 @@ const CvPage = ({ data }) => {
     const detailsR = details.map(({ name, level }) => {
       return (
         <li key={`${title}-${name}`} className={styles['card']}>
-          <div className={styles['card-top']}>{name}</div>
-          <div className={styles['card-main']}>
+          <div className={styles['cardTop']}>{name}</div>
+          <div className={styles['cardMain']}>
             <img
-              className={styles['item-image']}
+              className={styles['itemImage']}
               alt=""
               src={skillToImage(name)}
             />
           </div>
-          <div className={styles['card-bottom']}>
+          <div className={styles['cardBottom']}>
             <div className={styles['rating']}>{renderRatingToText(level)}</div>
           </div>
         </li>
       )
     })
     return (
-      <div key={index} className={styles['card-wrapper']}>
+      <div key={index} className={styles['cardWrapper']}>
         <h3>{title}</h3>
-        <ul className={styles['ul-wrapper']}>{detailsR}</ul>
+        <ul className={styles['urlWrapper']}>{detailsR}</ul>
       </div>
     )
   })
@@ -181,8 +184,8 @@ const CvPage = ({ data }) => {
       return <li key={item}>{item}</li>
     })
     return (
-      <div key={index} className={styles['education-items']}>
-        <div className={styles['education-header']}>
+      <div key={index} className={styles['educationItems']}>
+        <div className={styles['educationHeader']}>
           <h3>{school}</h3> <span>{dates}</span>
         </div>
         <ul>{detailsR}</ul>
@@ -224,9 +227,9 @@ const CvPage = ({ data }) => {
       }
 
       return (
-        <div key={index} className={styles['industry-items']}>
-          <div className={styles['industry-header']}>
-            <div className={styles['industry-left']}>
+        <div key={index} className={styles['industryItems']}>
+          <div className={styles['industryHeader']}>
+            <div className={styles['industryLeft']}>
               <h3>{place}</h3>{' '}
               <span className={styles['location']}>({location})</span>
             </div>
@@ -238,24 +241,24 @@ const CvPage = ({ data }) => {
       )
     }
   )
-
+  window.styles = styles
   return (
     <Layout>
       <SEO title="Home" keywords={[`cv`, `curcium vitale`, `software developer`, `Vincent houba`, 'houba vincent']} />
       <div>
-        <div className={styles['industries-wrapper']}>
+        <div className={styles['industriesWrapper']}>
           <h2>Industry</h2>
           {industryR}
         </div>
-        <div className={styles['educations-wrapper']}>
+        <div className={styles['educationsWrapper']}>
           <h2>Education</h2>
           {educationR}
         </div>
-        <div className={styles['skills-wrapper']}>
+        <div className={styles['skillsWrapper']}>
           <h2>Skills</h2>
           {skillR}
         </div>
-        <div className={styles['socials-wrapper']}>
+        <div className={styles['socialsWrapper']}>
           <h2>Socials</h2>
           {socialR}
         </div>
