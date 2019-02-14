@@ -30,11 +30,11 @@ h5 {
 }
 
 .educations-wrapper {
-    /* background-color: #fafafa; */
+    background-color: #fafafa;
 }
 
 .industries-wrapper {
-    /* background-color: #fafafa; */
+    background-color: #fafafa;
 }
 
 .industry-items {
@@ -135,7 +135,6 @@ h5 {
 .card-top {
     text-align: center;
     font-size: 1.1em;
-    color: red;
 }
 
 .card-main {
