@@ -1,3 +1,6 @@
+const rupture = require("rupture")
+
+
 module.exports = {
   siteMetadata: {
     title: 'edil3ra blog',
@@ -23,6 +26,12 @@ This last year, I learn a lot about data analyse, data mining, machine learning,
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+    {
+      resolve: "gatsby-plugin-stylus",
+      options: {
+        use: [rupture()],
+      },
+    },
     {
       resolve: `gatsby-plugin-typography`,
       options: {

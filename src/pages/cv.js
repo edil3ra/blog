@@ -1,7 +1,8 @@
 import React from 'react'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import styles from '../assets/css/cv.module.css'
+import { graphql} from "gatsby"
+import styles from '../assets/css/cv.module.styl'
 
 import blank from '../assets/images/blank.jpg'
 import logoAiohttp from '../assets/images/aiohttp-logo.png'
@@ -57,8 +58,7 @@ import logoVagrant from '../assets/images/vagrant-logo.png'
 import logoWebpack from '../assets/images/webpack-logo.png'
 import logoVue from '../assets/images/vue-logo.png'
 import logoQuasar from '../assets/images/quasar-logo.png'
-import socialLinkedin from '../assets/images/linkedin-social.jpg'
-import socialGithub from '../assets/images/github-social.png'
+
 
 const skillToImage = name => {
   const icons = [
@@ -146,12 +146,7 @@ const CvPage = ({ data }) => {
   }
 
   const cv = data.dataYaml
-  const socialR = (
-    <div className={styles['socials']}>
-      <div><a href={cv.social.linkedin}><img alt="" src={socialLinkedin}/></a></div>
-      <div><a href={cv.social.github}><img alt="" src={socialGithub}/></a></div>
-    </div>
-  )
+
 
   const skillR = cv.skills.map(({ title, details }, index) => {
     const detailsR = details.map(({ name, level }) => {
@@ -257,10 +252,6 @@ const CvPage = ({ data }) => {
         <div className={styles['skillsWrapper']}>
           <h2>Skills</h2>
           {skillR}
-        </div>
-        <div className={styles['socialsWrapper']}>
-          <h2>Socials</h2>
-          {socialR}
         </div>
       </div>
     </Layout>
