@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { graphql} from "gatsby"
 import style from '../assets/css/cv.module.sass'
+
 import blank from '../assets/images/blank.jpg'
 import logoAiohttp from '../assets/images/aiohttp-logo.png'
 import logoAngular from '../assets/images/angular-logo.png'
