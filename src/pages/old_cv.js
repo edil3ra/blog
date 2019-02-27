@@ -2,7 +2,9 @@ import React from 'react'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { graphql} from "gatsby"
-import style from '../assets/css/cv.module.sass'
+// import styles from '../assets/css/cv.module.styl'
+import styles from '../assets/css/cv.module.sass'
+
 import blank from '../assets/images/blank.jpg'
 import logoAiohttp from '../assets/images/aiohttp-logo.png'
 import logoAngular from '../assets/images/angular-logo.png'
@@ -58,7 +60,6 @@ import logoWebpack from '../assets/images/webpack-logo.png'
 import logoVue from '../assets/images/vue-logo.png'
 import logoQuasar from '../assets/images/quasar-logo.png'
 
-window.style = style
 
 const skillToImage = name => {
   const icons = [
@@ -125,22 +126,135 @@ const skillToImage = name => {
 }
 
 const CvPage = ({ data }) => {
+  const renderRatingToText = level => {
+    const down = 5 - level
+    const up = level
+
+    const downRender = Array.from(Array(down).keys()).map((down) => {
+      return <span key={down}>☆</span>
+    })
+
+    const upRender = Array.from(Array(up).keys()).map((up) => {
+      return <span key={up} className={styles['upRating']}>☆</span>
+    })
+
+    return (
+      <div className={styles['rating']}>
+        {downRender}
+        {upRender}
+      </div>
+    )
+  }
+
+  const cv = data.dataYaml
+
+
+  const skillR = cv.skills.map(({ title, details }, index) => {
+    const detailsR = details.map(({ name, level }) => {
+      return (
+        <li key={`${title}-${name}`} className={styles['card']}>
+          <div className={styles['cardTop']}>{name}</div>
+          <div className={styles['cardMain']}>
+            <img
+              className={styles['itemImage']}
+              alt=""
+              src={skillToImage(name)}
+            />
+          </div>
+          <div className={styles['cardBottom']}>
+            <div className={styles['rating']}>{renderRatingToText(level)}</div>
+          </div>
+        </li>
+      )
+    })
+    return (
+      <div key={index} className={styles['cardWrapper']}>
+        <h3>{title}</h3>
+        <ul className={styles['urlWrapper']}>{detailsR}</ul>
+      </div>
+    )
+  })
+
+  const educationR = cv.education.map(({ school, dates, details }, index) => {
+    const detailsR = details.map(item => {
+      return <li key={item}>{item}</li>
+    })
+    return (
+      <div key={index} className={styles['educationItems']}>
+        <div className={styles['educationHeader']}>
+          <h3>{school}</h3> <span>{dates}</span>
+        </div>
+        <ul>{detailsR}</ul>
+      </div>
+    )
+  })
+
+  const industryR = cv.industry.map(
+    ({ place, location, title, dates, detail, details }, index) => {
+      let detailsR = null
+
+      if (detail != null) {
+        detailsR = (
+          <ul>
+            {' '}
+            {detail.map(item => {
+              return <li key={item}>{item}</li>
+            })}
+          </ul>
+        )
+      } else {
+        detailsR = (
+          <div>
+            {' '}
+            {details.map(({ name, items }) => {
+              return (
+                <div key={name}>
+                  <h5>{name}</h5>
+                  <ul>
+                    {items.map(item => {
+                      return <li key={item}>{item}</li>
+                    })}
+                  </ul>
+                </div>
+              )
+            })}
+          </div>
+        )
+      }
+
+      return (
+        <div key={index} className={styles['industryItems']}>
+          <div className={styles['industryHeader']}>
+            <div className={styles['industryLeft']}>
+              <h3>{place}</h3>{' '}
+              <span className={styles['location']}>({location})</span>
+            </div>
+            <span className={styles['date']}>{dates}</span>
+          </div>
+          <h4>{title}</h4>
+          <div>{detailsR}</div>
+        </div>
+      )
+    }
+  )
+  
   return (
     <Layout>
       <SEO title="Home" keywords={[`cv`, `curcium vitale`, `software developer`, `Vincent houba`, 'houba vincent']} />
-      <section className={`${style.hero} ${style.isPrimary}`}>
-        <div className={style.heroBody}>
-          <div className={style.container}>
-            <h1 className={style.title}>
-              Primary title
-            </h1>
-            <h2 className={style.subtitle}>
-              Primary subtitle
-            </h2>
-          </div>
+      <div>
+        <div className={styles['industriesWrapper']}>
+          <h2>Industry</h2>
+          {industryR}
         </div>
-      </section>
-
+        <div className={styles['educationsWrapper']}>
+          <h2>Education</h2>
+          {educationR}
+        </div>
+        <div className={styles['skillsWrapper']}>
+          <h2>Skills</h2>
+          {skillR}
+        </div>
+      </div>
     </Layout>
   )
 }
@@ -148,7 +262,7 @@ const CvPage = ({ data }) => {
 export default CvPage
 
 export const query = graphql`
-  query TvQuery {
+  query CvQuery {
     dataYaml {
       name {
         first

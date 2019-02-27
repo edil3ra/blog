@@ -27,21 +27,43 @@ order:
   - [projects, Projects]
 
 about: '
-I am a fullstack developer with very good knowledge of python, react and aws.
-I am very passionate developer, I spend most of my free times experimenting with new framework, technologies
-I am interested in backend and front end.
-I am very familiar with git, docker, aws, vagrant, linux.
-I have good knowlege of sql and no sql database
-
-I built a bot for tinder and happn.
-I built a website for a lawer firm in django.
-I built a blog with nikola(python).
-I built some 2d video games in typescript and javascript.
-
-I spend a lot of time reading and listening podacst about technologies, developement, cloud computing...
-I keep in touch with the last trending tech like graphql...
-I have some knowledge in data analyst, web scrapping, machine learning, (familarity with numpy, pandas, skitlearn).
+<p> I have been working as professinal developer for 4 years now, I am fullstack developer with a very good knowledge of modern web application,  I can make spa application with react or vue, I also can build mobile application with react native, I can also make you a blog with (gastby, nikola, wodpress),
+</p>
+<p>
+What I really love about software development is building an clean architecture, when I am working I always keep in mind that my code need to be simple, refactorable, reusable, extensible and testable, If another developer or even non developer can read and undestrand the code then I am proud of my job, I really like the flux pattern as it help splitting the logic and the view layer.
+</p>
+<p>
+As a backend, I have a very good knowdledge on python, I build website with django, flask and aiohttp, I can make a restfull api, using websocked and graphql.
+</p>
+<p>
+I am also a lisp hacker, I am extremly efficient with emacs
+</p>
+<p>
+I Love to learn new programmingn languages, I have basic knowdledge in a lot of them, my main languages are python and javascript
+</p>
+<p>
+This last year, I learn a lot about data analyse, data mining, machine learning, statistics, I love reading book on the subject.
+</p>
+`
 '
+
+# about: '
+# I am a fullstack developer with very good knowledge of python, react and aws.
+# I am very passionate developer, I spend most of my free times experimenting with new framework, technologies
+# I am interested in backend and front end.
+# I am very familiar with git, docker, aws, vagrant, linux.
+# I have good knowlege of sql and no sql database
+
+# I built a bot for tinder and happn.
+# I built a website for a lawer firm in django.
+# I built a blog with nikola(python).
+# I built some 2d video games in typescript and javascript.
+
+# I spend a lot of time reading and listening podacst about technologies, developement, cloud computing...
+# I keep in touch with the last trending tech like graphql...
+# I have some knowledge in data analyst, web scrapping, machine learning, (familarity with numpy, pandas, skitlearn).
+# '
+
 
 
 
