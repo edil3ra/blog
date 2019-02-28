@@ -7,6 +7,7 @@
     "@material/typography": "^0.44.0",
     "@materialr/typography": "^1.1.2",
     "bulma": "^0.7.4",
+    "font-awesome": "^4.7.0",
     "gatsby": "^2.0.0",
     "gatsby-image": "^2.0.5",
     "gatsby-plugin-google-analytics": "^2.0.5",

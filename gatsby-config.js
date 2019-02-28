@@ -4,8 +4,18 @@ const rupture = require("rupture")
 module.exports = {
   siteMetadata: {
     title: 'Coding Fun',
-    description: `Learniing to code by doing simple, usefull and fun project, This blog will contain short article, book review, programming tips and tutorials`,
+    description: `Learning to code by doing simple, usefull and fun project, This blog will contain short article, book review, programming tips and tutorials`,
     author: `edil3ra`,
+    social: {
+      github: {
+        title:  'github',
+        link: 'https://github.com/edil3ra',
+      },
+      linkedin: {
+        title: 'linkedin',
+        link: 'https://www.linkedin.com/in/vincent-houba-866525b6',
+      }
+    }
   },
   plugins: [
     'gatsby-plugin-react-helmet',

@@ -16,3 +16,7 @@ pip3 install invoke bibtexparser --user
 yaurt -S latexmk
 
 invoke build-pdf
+
+# front
+## css
+    https://fontawesome.com/v4.7.0/icons/
