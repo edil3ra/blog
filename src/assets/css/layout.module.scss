@@ -1,0 +1,15 @@
+@import "./variable.sass";
+@import "node_modules/bulma/bulma.sass";
+@import "font-awesome/scss/font-awesome.scss";
+
+
+body {
+    background-image: url("../images/background.png");
+    min-height: 1000px
+}
+
+.my-main-content {
+    margin-top: 60px;
+    background: white;
+    min-height: 1000px;
+}
