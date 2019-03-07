@@ -2,7 +2,8 @@ import React from 'react'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { graphql} from "gatsby"
-import style from '../assets/css/cv.module.sass'
+import css from '../assets/css/cv.module.scss'
+import 'bulma/css/bulma.css'
 
 import blank from '../assets/images/logo/blank.jpg'
 import logoAiohttp from '../assets/images/logo/aiohttp-logo.png'
@@ -58,8 +59,6 @@ import logoVagrant from '../assets/images/logo/vagrant-logo.png'
 import logoWebpack from '../assets/images/logo/webpack-logo.png'
 import logoVue from '../assets/images/logo/vue-logo.png'
 import logoQuasar from '../assets/images/logo/quasar-logo.png'
-
-window.style = style
 
 const skillToImage = name => {
   const icons = [
@@ -125,23 +124,82 @@ const skillToImage = name => {
   }
 }
 
+
+
 const CvPage = ({ data }) => {
+  const cv = data.dataYaml
+  
+  console.log(cv)
+
+  const renderRatingToText = level => {
+    const down = 5 - level
+    const up = level
+
+    const downRender = Array.from(Array(down).keys()).map((down) => {
+      return <span key={down}>☆</span>
+    })
+
+    const upRender = Array.from(Array(up).keys()).map((up) => {
+      return <span key={up}>☆</span>
+    })
+
+    return (
+      <div className='rating'>
+        {downRender}
+        {upRender}
+      </div>
+    )
+  }
+
+
+  const skillR = cv.skills.map(({ title, details }, indexSkill) => {
+    const columnSize = 2
+    const maxColumnSize = 12
+    const columnByRow = maxColumnSize / columnSize
+    const rowSize = Math.ceil(details.length / columnByRow)
+
+    const detailsWrapper = Array.from(Array(rowSize).keys()).map(rowIndex => {
+      const detailSliced = details.slice(rowIndex * columnByRow, (rowIndex + 1) * columnByRow).map(({ name, level }) => {
+        return (
+          <div key={`${title}-${name}`} className={`${css.tile} ${css.isChild} ${css.myTile} ${css.is2} `}>
+            <p>
+              {name}
+            </p>
+            <figure>
+              <img className='' alt='' src={skillToImage(name)} />              
+            </figure>
+            <div className=''>
+              <div className=''>{renderRatingToText(level)}</div>
+            </div>
+          </div>
+        )
+      })
+      return (
+        <div key={rowIndex} className="tile is-parent is-12">
+          {detailSliced}
+        </div>
+      )
+    })
+
+    return (
+      <div key={indexSkill}>
+        <h2>{title}</h2>
+        {detailsWrapper}
+      </div>
+    )
+  })
+  
+
+
   return (
     <Layout>
       <SEO title="Home" keywords={[`cv`, `curcium vitale`, `software developer`, `Vincent houba`, 'houba vincent']} />
-      <section className={`${style.hero} ${style.isPrimary}`}>
-        <div className={style.heroBody}>
-          <div className={style.container}>
-            <h1 className={style.title}>
-              Primary title
-            </h1>
-            <h2 className={style.subtitle}>
-              Primary subtitle
-            </h2>
-          </div>
+      <div>
+        <h2>Skills</h2>
+        <div>
+          {skillR}
         </div>
-      </section>
-
+      </div>
     </Layout>
   )
 }

@@ -1,0 +1,21 @@
+@import "./variable.sass";
+@import "node_modules/bulma/bulma.sass";
+@import "font-awesome/scss/font-awesome.scss";
+
+.my-tile {
+    
+}
+
+.my-tile figure {
+    width: 100px;
+    height: 100px;
+    /* margin-right: 1em; */
+
+}
+
+
+
+
+.my-tile p {
+    font-size: 0.6em;
+}

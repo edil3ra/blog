@@ -65,12 +65,12 @@ const Header = ({ siteTitle, social }) => {
                   <span>{ social.linkedin.title }</span>
                 </a>
                 <hr className={css.navbarDivider}/>
-                <a className={css.navbarItem}>
+                <Link to="cv" className={css.navbarItem}>
                   <span className={css.icon}>
                     <i className={`${css.fa} ${css.faUser}`}></i>
                   </span>
                   <span>About me</span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
