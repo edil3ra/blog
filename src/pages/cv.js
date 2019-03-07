@@ -2,8 +2,8 @@ import React from 'react'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { graphql} from "gatsby"
-import css from '../assets/css/cv.module.scss'
 import 'bulma/css/bulma.css'
+import css from '../assets/css/cv.module.scss'
 
 import blank from '../assets/images/logo/blank.jpg'
 import logoAiohttp from '../assets/images/logo/aiohttp-logo.png'
@@ -161,15 +161,15 @@ const CvPage = ({ data }) => {
     const detailsWrapper = Array.from(Array(rowSize).keys()).map(rowIndex => {
       const detailSliced = details.slice(rowIndex * columnByRow, (rowIndex + 1) * columnByRow).map(({ name, level }) => {
         return (
-          <div key={`${title}-${name}`} className={`${css.tile} ${css.isChild} ${css.myTile} ${css.is2}`}>
+          <div key={`${title}-${name}`} className={`${css.myTile} ${css.tile} ${css.is2} ${css.isChild}`}>
             <h4 className="has-text-centered">
               {name}
             </h4>
             <figure className="has-text-centered">
-              <img className='' alt='' src={skillToImage(name)} />              
+              <img alt='' src={skillToImage(name)} />              
             </figure>
             <div className='has-text-centered'>
-              <div className=''>{renderRatingToText(level)}</div>
+              <div >{renderRatingToText(level)}</div>
             </div>
           </div>
         )
