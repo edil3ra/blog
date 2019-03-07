@@ -161,21 +161,21 @@ const CvPage = ({ data }) => {
     const detailsWrapper = Array.from(Array(rowSize).keys()).map(rowIndex => {
       const detailSliced = details.slice(rowIndex * columnByRow, (rowIndex + 1) * columnByRow).map(({ name, level }) => {
         return (
-          <div key={`${title}-${name}`} className={`${css.tile} ${css.isChild} ${css.myTile} ${css.is2} `}>
-            <p>
+          <div key={`${title}-${name}`} className={`${css.tile} ${css.isChild} ${css.myTile} ${css.is2}`}>
+            <h4 className="has-text-centered">
               {name}
-            </p>
-            <figure>
+            </h4>
+            <figure className="has-text-centered">
               <img className='' alt='' src={skillToImage(name)} />              
             </figure>
-            <div className=''>
+            <div className='has-text-centered'>
               <div className=''>{renderRatingToText(level)}</div>
             </div>
           </div>
         )
       })
       return (
-        <div key={rowIndex} className="tile is-parent is-12">
+        <div key={rowIndex} className="tile is-parent is-12 has-background-white">
           {detailSliced}
         </div>
       )
@@ -183,7 +183,7 @@ const CvPage = ({ data }) => {
 
     return (
       <div key={indexSkill}>
-        <h2>{title}</h2>
+        <h2 className="is-size-3 is-capitalized has-text-grey">{title}</h2>
         {detailsWrapper}
       </div>
     )
@@ -195,7 +195,7 @@ const CvPage = ({ data }) => {
     <Layout>
       <SEO title="Home" keywords={[`cv`, `curcium vitale`, `software developer`, `Vincent houba`, 'houba vincent']} />
       <div>
-        <h2>Skills</h2>
+        <h2 className="is-size-2 is-capitalized">Skills</h2>
         <div>
           {skillR}
         </div>
