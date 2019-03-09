@@ -161,7 +161,7 @@ const CvPage = ({ data }) => {
     const detailsWrapper = Array.from(Array(rowSize).keys()).map(rowIndex => {
       const detailSliced = details.slice(rowIndex * columnByRow, (rowIndex + 1) * columnByRow).map(({ name, level }) => {
         return (
-          <div key={`${title}-${name}`} className={`${css.myTile} ${css.tile} ${css.is2} ${css.isChild} ${css.marginLess}`}>
+          <div key={`${title}-${name}`} className={`${css.myTile} ${css.tile} ${css.is2} ${css.isChild}`}>
             <div className={`${css.myTileWrapper}`}>
               <h4 className="has-text-centered">
                 {name}
