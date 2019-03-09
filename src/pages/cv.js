@@ -160,8 +160,10 @@ const CvPage = ({ data }) => {
 
     const detailsWrapper = Array.from(Array(rowSize).keys()).map(rowIndex => {
       const detailSliced = details.slice(rowIndex * columnByRow, (rowIndex + 1) * columnByRow).map(({ name, level }) => {
+
         return (
-          <div key={`${title}-${name}`} className={`${css.myTile} ${css.tile} ${css.is2} ${css.isChild}`}>
+          <div key={`${title}-${name}`}
+               className={`${css.myTile} ${css.tile} ${css.is2} ${css.isChild}`}>
             <div className={`${css.myTileWrapper}`}>
               <h4 className="has-text-centered">
                 {name}
@@ -176,15 +178,17 @@ const CvPage = ({ data }) => {
           </div>
         )
       })
+
+
       return (
-        <div key={rowIndex} className={`${css.tile} ${css.isParent} ${css.hasBackgrounWhite} ${css.myTileParent}`}>
+        <div key={rowIndex} className={`${css.tile} ${css.isParent} ${css.myTileParent}`}>
           {detailSliced}
         </div>
       )
     })
-
     return (
-      <div key={indexSkill} className={`${css.hasBackgroundPrimaryH} ${css.myTileSkill}`}>
+      <div key={indexSkill}
+           className={` ${css.myTileSkill} ${indexSkill % 2 ? css.myTileBackground1: css.myTileBackground2}`}>
         <h2 className="is-size-3 is-capitalized has-text-grey">{title}</h2>
         {detailsWrapper}
       </div>
