@@ -3,10 +3,19 @@
 @import "font-awesome/scss/font-awesome.scss";
 
 .my-tile {
+    
+}
+
+.my-tile-parent {
+    margin: 5px !important;
+    padding: 0 !important;
+}
+
+.my-tile-wrapper {
+    margin: 0px 3px !important;
     box-shadow: 1px 1px 4px grey;
     border: 1px solid grey;
     border-radius: 3px;
-    // background-color: red;
 }
 
 .my-tile figure {

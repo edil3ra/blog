@@ -13,7 +13,7 @@ npm install --global gatsby-cli
 
 pip3 install invoke bibtexparser --user
 
-yaurt -S latexmk
+yaourt -S auctex-latexmk
 
 invoke build-pdf
 

@@ -161,21 +161,24 @@ const CvPage = ({ data }) => {
     const detailsWrapper = Array.from(Array(rowSize).keys()).map(rowIndex => {
       const detailSliced = details.slice(rowIndex * columnByRow, (rowIndex + 1) * columnByRow).map(({ name, level }) => {
         return (
-          <div key={`${title}-${name}`} className={`${css.myTile} ${css.tile} ${css.is2} ${css.isChild}`}>
-            <h4 className="has-text-centered">
-              {name}
-            </h4>
-            <figure className="has-text-centered">
-              <img alt='' src={skillToImage(name)} />              
-            </figure>
-            <div className='has-text-centered'>
-              <div >{renderRatingToText(level)}</div>
+          <div key={`${title}-${name}`} className={`${css.myTile} ${css.tile} ${css.is2} ${css.isChild} ${css.marginLess}`}>
+            <div className={`${css.myTileWrapper}`}>
+              <h4 className="has-text-centered">
+                {name}
+              </h4>
+              <figure className="has-text-centered">
+                <img alt='' src={skillToImage(name)} />              
+              </figure>
+              <div className='has-text-centered'>
+                <div >{renderRatingToText(level)}</div>
+              </div>
             </div>
           </div>
         )
       })
       return (
-        <div key={rowIndex} className="tile is-parent is-12 has-background-white">
+        // <div key={rowIndex} className={'tile is-parent has-background-white' + css.myTileParent}>
+        <div key={rowIndex} className={`${css.tile} ${css.isParent} ${css.hasBackgrounWhite} ${css.myTileParent}`}>
           {detailSliced}
         </div>
       )
