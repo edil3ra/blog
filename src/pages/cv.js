@@ -177,7 +177,6 @@ const CvPage = ({ data }) => {
         )
       })
       return (
-        // <div key={rowIndex} className={'tile is-parent has-background-white' + css.myTileParent}>
         <div key={rowIndex} className={`${css.tile} ${css.isParent} ${css.hasBackgrounWhite} ${css.myTileParent}`}>
           {detailSliced}
         </div>
@@ -185,7 +184,7 @@ const CvPage = ({ data }) => {
     })
 
     return (
-      <div key={indexSkill}>
+      <div key={indexSkill} className={`${css.hasBackgroundPrimaryH} ${css.myTileSkill}`}>
         <h2 className="is-size-3 is-capitalized has-text-grey">{title}</h2>
         {detailsWrapper}
       </div>
@@ -198,10 +197,14 @@ const CvPage = ({ data }) => {
     <Layout>
       <SEO title="Home" keywords={[`cv`, `curcium vitale`, `software developer`, `Vincent houba`, 'houba vincent']} />
       <div>
-        <h2 className="is-size-2 is-capitalized">Skills</h2>
-        <div>
-          {skillR}
-        </div>
+        <section className="hero">
+          <div className="">
+            <h2 className="is-size-2 is-capitalized">Skills</h2>
+            <div>
+              {skillR}
+            </div>
+          </div>
+        </section>
       </div>
     </Layout>
   )
