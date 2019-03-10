@@ -10,8 +10,6 @@ url: "https://silly-mclean-010d02.netlify.com"
 social:
   github: https://github.com/edil3ra
   linkedin: https://www.linkedin.com/in/vincent-houba-866525b6/
-# Erdős  number is at most 4.
-# (Brandon Amos -> Layne Watson -> Leroy Kelly -> Zoltán Füredi -> Paul Erdős )
 
 # LaTeX formatting.
 style: classic # casual, classic, oldstyle, or banking
@@ -166,28 +164,30 @@ skills:
        level: 5
      - name: Javascript (es6)
        level: 4
-     - name: Elisp
-       level: 2 
+     - name: Typescript
+       level: 3
+     - name: Ruby
+       level: 3 
+     - name: Bash
+       level: 2
      - name: Node
        level: 2
-     - name: Ruby
+     - name: Elisp
        level: 2 
      - name: Elixir
-       level: 1
+       level: 2
+     - name: Clojure
+       level: 2
      - name: Php
        level: 1 
      - name: Java
        level: 1
-     - name: Clojure
-       level: 1
-     - name: Typescript
-       level: 2
   - title: Framework python
     details:
      - name: Django
        level: 3
      - name: Flask
-       level: 1
+       level: 3
      - name: Nikola
        level: 2
      - name: Aiohttp
@@ -195,7 +195,7 @@ skills:
   - title: Framework javascript
     details:
      - name: Vue
-       level: 5
+       level: 4
      - name: Quasar
        level: 4
      - name: React
@@ -204,24 +204,28 @@ skills:
        level: 3
      - name: React native
        level: 3
+     - name: Gatsby
+       level: 3
      - name: Jquery
        level: 2
      - name: Angular
        level: 2
-     - name: Gatsby
-       level: 2
   - title: Integrations
     details:
      - name: Css
-       level: 1
+       level: 3
+     - name: Stylus
+       level: 3
+     - name: Bulma
+       level: 3
      - name: Sass
-       level: 1
+       level: 2
      - name: Foundation
-       level: 1
+       level: 2
      - name: Bootstrap
-       level: 1
+       level: 2
      - name: Materialize
-       level: 1
+       level: 2
   - title: Build tools
     details:
      - name: Webapck
@@ -254,25 +258,27 @@ skills:
        level: 3
   - title: Tools
     details:
+     - name: Emacs
+       level: 5
+     - name: Git
+       level: 4
      - name: Aws
+       level: 3
+     - name: Docker
        level: 3
      - name: Google cloud
        level: 2
-     - name: Emacs
-       level: 4
-     - name: Docker
-       level: 3
      - name: Vagrant
        level: 2
-     - name: Git
-       level: 4
      - name: Jira
        level: 2
+     - name: Gitlab
+       level: 3
      - name: Github
        level: 2
-     - name: Gitlab
-       level: 2
      - name: Bitbucket
+       level: 2
+     - name: Jenkins
        level: 2
   - title: Os
     details:
