@@ -2,12 +2,17 @@
 @import "node_modules/bulma/bulma.sass";
 @import "font-awesome/scss/font-awesome.scss";
 
-.my-tile {
-    background: #fff;
+
+.skill-title {
+    padding: 0 0.4em;
 }
 
-.section-wrapper {
-    padding: 0.2em;
+.padding-wrapper {
+    padding: 0 2em;
+}
+
+.my-tile {
+    background: #fff;
 }
 
 .my-tile-background-1 {
@@ -19,17 +24,17 @@
 }
 
 .my-tile-skill {
+    padding: 0 1em;
     padding-bottom: 2em;
 }
 
 .my-tile-skill h3 {
-    /* margin: 0 10px;  */
     border-bottom: 1px grey solid;
 }
 
 .my-tile-parent {
     margin-top: 5px !important;
-    padding: 0!important;
+    padding: 0 !important;
 }
 
 .my-tile-wrapper {

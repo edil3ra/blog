@@ -166,9 +166,9 @@ const CvPage = ({ data }) => {
     })
     return (
       <div key={index}>
-        <div className="">
-          <h3 className="  has-text-left is-size-3 is-capitalized has-text-grey">{school}</h3>
-          <div className=" has-text-right">{dates}</div>
+        <div className="columns">
+          <h3 className="column is-6 has-text-left is-size-3 is-capitalized has-text-grey">{school}</h3>
+          <div className="column is-6 has-text-right">{dates}</div>
         </div>
         <ul>{detailsR}</ul>
       </div>
@@ -225,12 +225,12 @@ return (
     <SEO title="Home" keywords={[`cv`, `curcium vitale`, `software developer`, `Vincent houba`, 'houba vincent']} />
     <div>
       <section className={`${css.columns} ${css.isMultiline} ${css.sectionWrapper}`}>
-        <div className="column is-12">
+        <div className={`${css.column} ${css.is12} ${css.paddingWrapper}`}>
           <h2 className="is-size-2 is-capitalized">Education</h2>
           {educationR}
         </div>
         <div className="column is-12">
-          <h2 className="is-size-2 is-capitalized">Skills</h2>
+          <h2 className={`${css.isSize2} ${css.isCapitalized} ${css.skillTitle}`}>Skills</h2>
           <div>
             {skillR}
           </div>
