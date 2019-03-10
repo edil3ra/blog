@@ -160,6 +160,21 @@ const CvPage = ({ data }) => {
   console.log(cv)
 
 
+  const educationR = cv.education.map(({ school, dates, details }, index) => {
+    const detailsR = details.map(item => {
+      return <li key={item}>{item}</li>
+    })
+    return (
+      <div key={index}>
+        <div className="">
+          <h3 className="  has-text-left is-size-3 is-capitalized has-text-grey">{school}</h3>
+          <div className=" has-text-right">{dates}</div>
+        </div>
+        <ul>{detailsR}</ul>
+      </div>
+    )
+  })
+
   const skillR = cv.skills.map(({ title, details }, indexSkill) => {
     const columnSize = 2
     const maxColumnSize = 12
@@ -197,7 +212,7 @@ const CvPage = ({ data }) => {
     return (
       <div key={indexSkill}
            className={` ${css.myTileSkill} ${indexSkill % 2 ? css.myTileBackground1: css.myTileBackground2}`}>
-        <h2 className="is-size-3 is-capitalized has-text-grey">{title}</h2>
+        <h3 className="is-size-3 is-capitalized has-text-grey">{title}</h3>
         {detailsWrapper}
       </div>
     )
@@ -205,21 +220,25 @@ const CvPage = ({ data }) => {
   
 
 
-  return (
-    <Layout>
-      <SEO title="Home" keywords={[`cv`, `curcium vitale`, `software developer`, `Vincent houba`, 'houba vincent']} />
-      <div>
-        <section className="hero">
-          <div className="">
-            <h2 className="is-size-2 is-capitalized">Skills</h2>
-            <div>
-              {skillR}
-            </div>
+return (
+  <Layout>
+    <SEO title="Home" keywords={[`cv`, `curcium vitale`, `software developer`, `Vincent houba`, 'houba vincent']} />
+    <div>
+      <section className={`${css.columns} ${css.isMultiline} ${css.sectionWrapper}`}>
+        <div className="column is-12">
+          <h2 className="is-size-2 is-capitalized">Education</h2>
+          {educationR}
+        </div>
+        <div className="column is-12">
+          <h2 className="is-size-2 is-capitalized">Skills</h2>
+          <div>
+            {skillR}
           </div>
-        </section>
-      </div>
-    </Layout>
-  )
+        </div>
+      </section>
+    </div>
+  </Layout>
+)
 }
 
 export default CvPage

@@ -6,27 +6,30 @@
     background: #fff;
 }
 
+.section-wrapper {
+    padding: 0.2em;
+}
 
 .my-tile-background-1 {
-    background: #fafafa;
+    background: darken(white, 6%);
 }
 
 .my-tile-background-2 {
-    background: #f0f0f0;
+    background: darken(white, 3%);
 }
 
 .my-tile-skill {
     padding-bottom: 2em;
 }
 
-.my-tile-skill h2 {
-    margin: 0 10px; 
+.my-tile-skill h3 {
+    /* margin: 0 10px;  */
     border-bottom: 1px grey solid;
 }
 
 .my-tile-parent {
-    margin: 5px 5px 0px 5px !important;
-    padding: 0 !important;
+    margin-top: 5px !important;
+    padding: 0!important;
 }
 
 .my-tile-wrapper {
