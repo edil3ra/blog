@@ -125,31 +125,31 @@ const skillToImage = name => {
 }
 
 
+const renderRatingToText = level => {
+  const down = 5 - level
+  const up = level
+
+  const downRender = Array.from(Array(down).keys()).map((down) => {
+    return <span key={down}>☆</span>
+  })
+
+  const upRender = Array.from(Array(up).keys()).map((up) => {
+    return <span key={up} className='has-text-danger'>☆</span>
+  })
+
+  return (
+    <div className={css.rating}>
+      {downRender}
+      {upRender}
+    </div>
+  )
+}
+
+
 
 const CvPage = ({ data }) => {
   const cv = data.dataYaml
-  
   console.log(cv)
-
-  const renderRatingToText = level => {
-    const down = 5 - level
-    const up = level
-
-    const downRender = Array.from(Array(down).keys()).map((down) => {
-      return <span key={down}>☆</span>
-    })
-
-    const upRender = Array.from(Array(up).keys()).map((up) => {
-      return <span key={up}>☆</span>
-    })
-
-    return (
-      <div className='rating'>
-        {downRender}
-        {upRender}
-      </div>
-    )
-  }
 
 
   const skillR = cv.skills.map(({ title, details }, indexSkill) => {
