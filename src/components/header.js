@@ -21,25 +21,25 @@ const Header = ({ siteTitle, social }) => {
         </div>
         <div className={css.navbarMenu}>
           <div className={`${css.navbarStart} ${css.myNavbarStart}`}>
-            <Link to="/" className={css.navbarItem}>
+            <Link to="articles" className={css.navbarItem}>
               <span className={css.icon}>
                 <i className={`${css.fa} ${css.faPuzzlePiece}`}></i>
               </span>
               <span>Articles</span>
             </Link>
-            <Link to="/" className={css.navbarItem}>
+            <Link to="tutorials" className={css.navbarItem}>
               <span className={css.icon}>
                 <i className={`${css.fa} ${css.faFlask}`}></i>
               </span>
               <span>Tutorial</span>
             </Link>
-            <Link to="/" className={css.navbarItem}>
+            <Link to="showcases" className={css.navbarItem}>
               <span className={css.icon}>
                 <i className={`${css.fa} ${css.faTerminal}`}></i>
               </span>
               <span>Showcases</span>
             </Link>
-            <Link to="/" className={css.navbarItem}>
+            <Link to="games" className={css.navbarItem}>
               <span className={css.icon}>
                 <i className={`${css.fa} ${css.faGamepad}`}></i>
               </span>
