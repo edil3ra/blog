@@ -2,6 +2,30 @@
 @import "node_modules/bulma/bulma.sass";
 @import "font-awesome/scss/font-awesome.scss";
 
+.my-section {
+    margin-bottom: 2em !important;
+}
+
+.my-list-detail {
+    list-style-type: circle;
+    margin-left: 2em;
+}
+
+.my-header-section {
+    border-bottom: 1px solid grey;
+    margin:  0.1em;
+    align-items: center;
+}
+
+.my-header-section > h3 {
+    padding: 0;
+    margin-bottom: 0 !important;
+}
+
+.my-header-section > div{
+    padding: 0;
+    vertical-align: baseline
+}
 
 .skill-title {
     padding: 0 0.4em;
