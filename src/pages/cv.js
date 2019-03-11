@@ -160,6 +160,56 @@ const CvPage = ({ data }) => {
   console.log(cv)
 
 
+  const industryR = cv.industry.map(
+    ({ place, location, title, dates, detail, details }, index) => {
+      let detailsR = null
+
+      if (detail != null) {
+        detailsR = (
+          <ul>
+            {' '}
+            {detail.map(item => {
+              return <li key={item}>{item}</li>
+            })}
+          </ul>
+        )
+      } else {
+        detailsR = (
+          <div>
+            {' '}
+            {details.map(({ name, items }) => {
+              return (
+                <div key={name}>
+                  <h5>{name}</h5>
+                  <ul>
+                    {items.map(item => {
+                      return <li key={item}>{item}</li>
+                    })}
+                  </ul>
+                </div>
+              )
+            })}
+          </div>
+        )
+      }
+
+      return (
+        <div key={index} >
+          <div >
+            <div className="columns">
+              <h3 className="column is-6 has-text-left is-size-3 is-capitalized has-text-grey">{place}</h3>
+              <div className="column is-6 has-text-right">{location}</div>
+              
+            </div>
+            <h4>{title}</h4>
+            <div>{detailsR}</div>
+          </div>
+        </div>
+      )
+    }
+  )
+  
+
   const educationR = cv.education.map(({ school, dates, details }, index) => {
     const detailsR = details.map(item => {
       return <li key={item}>{item}</li>
@@ -220,25 +270,29 @@ const CvPage = ({ data }) => {
   
 
 
-return (
-  <Layout>
-    <SEO title="Home" keywords={[`cv`, `curcium vitale`, `software developer`, `Vincent houba`, 'houba vincent']} />
-    <div>
-      <section className={`${css.columns} ${css.isMultiline} ${css.sectionWrapper}`}>
-        <div className={`${css.column} ${css.is12} ${css.paddingWrapper}`}>
-          <h2 className="is-size-2 is-capitalized">Education</h2>
-          {educationR}
-        </div>
-        <div className="column is-12">
-          <h2 className={`${css.isSize2} ${css.isCapitalized} ${css.skillTitle}`}>Skills</h2>
-          <div>
-            {skillR}
+  return (
+    <Layout>
+      <SEO title="Home" keywords={[`cv`, `curcium vitale`, `software developer`, `Vincent houba`, 'houba vincent']} />
+      <div>
+        <section className={`${css.columns} ${css.isMultiline} ${css.sectionWrapper}`}>
+          <div className={`${css.column} ${css.is12} ${css.paddingWrapper}`}>
+            <h2 className="is-size-2 is-capitalized">Industry</h2>
+            {industryR}
           </div>
-        </div>
-      </section>
-    </div>
-  </Layout>
-)
+          <div className={`${css.column} ${css.is12} ${css.paddingWrapper}`}>
+            <h2 className="is-size-2 is-capitalized">Education</h2>
+            {educationR}
+          </div>
+          <div className="column is-12">
+            <h2 className={`${css.isSize2} ${css.isCapitalized} ${css.skillTitle}`}>Skills</h2>
+            <div>
+              {skillR}
+            </div>
+          </div>
+        </section>
+      </div>
+    </Layout>
+  )
 }
 
 export default CvPage
