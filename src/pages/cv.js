@@ -298,7 +298,7 @@ const CvPage = ({ data }) => {
 export default CvPage
 
 export const query = graphql`
-  query TvQuery {
+  query CvQuery {
     dataYaml {
       name {
         first
