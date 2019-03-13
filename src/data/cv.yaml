@@ -67,13 +67,13 @@ This last year, I learn a lot about data analyse, data mining, machine learning,
 
 education:
   - school: Formation zf2
-    dates: jun 2015 -- july 2015
+    dates: jun 2015/july 2015
     details:
      - POO & Design Patterns, Tests Unitaires et ZendFramwork
 
   - school: STE-Formations
     degree: Java cloud computing
-    dates: Aug 2014 -- May 2015
+    dates: Aug 2014/May 2015
     details:
      - Diging deep into design pattern in java
      - Algorithm course on paper  
@@ -83,7 +83,7 @@ education:
 
   - school: IPSF
     degree: Bac+2 Web developer
-    dates: Aug 2012 -- May 2014
+    dates: Aug 2012/May 2014
     details:
     - Learning html, css, jquery, php, mysql, wordpress (first year)
     - learning poo, symfony2, version control (second year)
@@ -95,22 +95,22 @@ industry:
   - place: Faktory
     location: Belgium
     title: Full stack developer
-    dates: Aout 2017 - Today
+    dates: Aout 2017/July 2018
     details:
       - name: P-heal
         items:
-          - Working on an iot device that calculate weight variations and blinking to help people take theirs medicaments
-          - Create a mobile application with react-native for the p-heal device
+          - Working on an iot device that calculate weight variations to help old people take theirs pills
+          - Create a mobile application with react-native for p-heal device
           - Refactor the backend to aws with serverless
       - name: Bdm
         items:
           - Create a recommendation engine for a broadcaster.
-          - Built a microservice to extract content from video.
-          - Test the recommendation engine with unitetest and behave.
+          - Create multiple microservices to extract content from video, audio, featurizing data.
+          - Doing integration test(behae) and unittest for microservices
           - Searching for solution to improve the recommendation engine (tf/idf, elasticsearch).
           - Create a cache system with redis to avoid collecting and fetching the same data.
-          - Collect data on users (time spended on article, time spend watching a video...) to rate articles and videos.
-          - Python, kafka, aiohttp, sql, behave, unittest, react, docker, redis, pyspark, pandas
+          - Collect data on users (time spended on article, time spend watching a video...) with websocket
+          - Python, Kafka, Aiohttp, Sql, Behave, Unittest, React, Docker, Redis, Pyspark, Pandas
   - place: Vesperia
     location: Luxembourg
     title: Full stack developer
@@ -118,24 +118,23 @@ industry:
     details:
       - name: Doctena
         items: 
-          - Make their mail responsive with ljml
-          - Resolve Visual bugfix
+          - Render their mail responsive with ljml
+          - Bugfixing to improve the application in multiple browser and multpile screen
       - name: Logdirect
         items:
-         - Refactor front end code for different site, with jquery, gulp, css
-         - unittest made home framework with nodejs            
+         - Refactor front end code for multiple sites (jquery, gulp, css)
+         - Unittest an node application
       - name: atHome
         items: 
-          - Bulding static analyse tools with typescript (made home framework)
-
+          - Bulding static analyctic tools with typescript (made home framework)
   - place: Vous.lu
     location: Luxembourg
     title: Web developer Intern
     dates: Jan 2015 - Mars 2015
     detail:
-      - I built a website with php(no framework).
-      - Improve website for mobile displaying.
-      - Testing differents tools to make animation in js/css3
+      - Building a website in php (no framework).
+      - Improve website for mobile application.
+      - Investigate severals tools and different technique to make animation in js/css3
 
 
 projects:

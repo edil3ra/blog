@@ -166,7 +166,7 @@ const CvPage = ({ data }) => {
 
       if (detail != null) {
         detailsR = (
-          <ul>
+          <ul className={`${css.myListDetail}`}>
             {' '}
             {detail.map(item => {
               return <li key={item}>{item}</li>
@@ -180,8 +180,8 @@ const CvPage = ({ data }) => {
             {details.map(({ name, items }) => {
               return (
                 <div key={name}>
-                  <h5>{name}</h5>
-                  <ul>
+                  <h5 classname="subtitle is-6">{name}</h5>
+                  <ul className={`${css.myListDetail}`}>
                     {items.map(item => {
                       return <li key={item}>{item}</li>
                     })}
@@ -195,13 +195,17 @@ const CvPage = ({ data }) => {
 
       return (
         <div key={index} >
-          <div >
-            <div className="columns">
-              <h3 className="column is-6 has-text-left is-size-3 is-capitalized has-text-grey">{place}</h3>
-              <div className="column is-6 has-text-right">{location}</div>
-              
+          <div className={`${css.mySection}`}>
+            <div className={`${css.columns} ${css.myHeaderSection} ${css.isPaddingless}`}>
+              <h3 className="column is-6 has-text-left is-size-3 is-capitalized has-text-grey">
+                {place}
+                <span className="is-size-6">- ({title})</span>
+              </h3>
+              <div className="column is-6 has-text-right has-text-grey">
+                {dates}
+                <span className="is-size-6">- ({location})</span>
+              </div>
             </div>
-            <h4>{title}</h4>
             <div>{detailsR}</div>
           </div>
         </div>
@@ -233,7 +237,6 @@ const CvPage = ({ data }) => {
 
     const detailsWrapper = Array.from(Array(rowSize).keys()).map(rowIndex => {
       const detailSliced = details.slice(rowIndex * columnByRow, (rowIndex + 1) * columnByRow).map(({ name, level }) => {
-
         return (
           <div key={`${title}-${name}`}
                className={`${css.myTile} ${css.tile} ${css.is2} ${css.isChild}`}>
@@ -251,7 +254,6 @@ const CvPage = ({ data }) => {
           </div>
         )
       })
-
 
       return (
         <div key={rowIndex} className={`${css.tile} ${css.isParent} ${css.myTileParent}`}>
