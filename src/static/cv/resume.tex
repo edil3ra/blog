@@ -1,0 +1,388 @@
+% Copyright 2013 Christophe-Marie Duquesne <chmd@chmd.fr>
+% Copyright 2014 Mark Szepieniec <http://github.com/mszep>
+% 
+% ConText style for making a resume with pandoc. Inspired by moderncv.
+% 
+% This CSS document is delivered to you under the CC BY-SA 3.0 License.
+% https://creativecommons.org/licenses/by-sa/3.0/deed.en_US
+
+\startmode[*mkii]
+  \enableregime[utf-8]  
+  \setupcolors[state=start]
+\stopmode
+
+\setupcolor[hex]
+\definecolor[titlegrey][h=757575]
+\definecolor[sectioncolor][h=397249]
+\definecolor[rulecolor][h=9cb770]
+
+% Enable hyperlinks
+\setupinteraction[state=start, color=sectioncolor]
+
+\setuppapersize [A4][A4]
+\setuplayout    [width=middle, height=middle,
+                 backspace=20mm, cutspace=0mm,
+                 topspace=10mm, bottomspace=20mm,
+                 header=0mm, footer=0mm]
+
+%\setuppagenumbering[location={footer,center}]
+
+\setupbodyfont[11pt, helvetica]
+
+\setupwhitespace[medium]
+
+\setupblackrules[width=31mm, color=rulecolor]
+
+\setuphead[chapter]      [style=\tfd]
+\setuphead[section]      [style=\tfd\bf, color=titlegrey, align=middle]
+\setuphead[subsection]   [style=\tfb\bf, color=sectioncolor, align=right,
+                          before={\leavevmode\blackrule\hspace}]
+\setuphead[subsubsection][style=\bf]
+
+\setuphead[chapter, section, subsection, subsubsection][number=no]
+
+%\setupdescriptions[width=10mm]
+
+\definedescription
+  [description]
+  [headstyle=bold, style=normal,
+   location=hanging, width=18mm, distance=14mm, margin=0cm]
+
+\setupitemize[autointro, packed]    % prevent orphan list intro
+\setupitemize[indentnext=no]
+
+\setupfloat[figure][default={here,nonumber}]
+\setupfloat[table][default={here,nonumber}]
+
+\setuptables[textwidth=max, HL=none]
+\setupxtable[frame=off,option={stretch,width}]
+
+\setupthinrules[width=15em] % width of horizontal rules
+
+\setupdelimitedtext
+  [blockquote]
+  [before={\setupalign[middle]},
+   indentnext=no,
+  ]
+
+
+\starttext
+
+\section[title={Houba Vincent},reference={houba-vincent}]
+
+\thinrule
+
+\startblockquote
+I am a fullstack developer with equal knowledge on the front and backend
+side.\crlf
+I am a quick learner, I work with a lot of different thecnologies
+lanuages, library, frameworks.\crlf
+I can Build static website, spa, mobile application, cli, create rest
+api, work with sql and no-sql database deploy in cloud (aws)\crlf
+My language of expertise are python (django, flask, aiohttp) and
+javascript (react, vue)\crlf
+I am also a lisp hacker, emacs guru and a git ninja\crlf
+\stopblockquote
+
+\thinrule
+
+\subsection[title={Experience},reference={experience}]
+
+\subsubsection[title={Front end engineering - {\bf (Robovision)} -
+{\bf (June 2018 - April 2019)} -
+{\bf (Belgium/Ghent)}},reference={front-end-engineering---robovision---june-2018---april-2019---belgiumghent}]
+
+\startitemize[packed]
+\item
+  Create multiple tools to label images
+\item
+  Build charts and metrics for quality of labeling
+\item
+  Merge quasar (vue framework) version to more recent one
+\item
+  Create multiple reusable component.
+\item
+  Create an admin to create projects, users, group\ldots{}
+\item
+  Test components with cypress
+\item
+  Python, Vue, Vuex, Vue-router, Quasar, Typescript, Es6, cypress,
+  Docker
+\stopitemize
+
+\subsubsection[title={Full Stack Developer - {\bf (Factory)} -
+{\bf (Aout 2017 - May 2018)} -
+{\bf (Belgium/Liege)}},reference={full-stack-developer---factory---aout-2017---may-2018---belgiumliege}]
+
+{\bf P-heal}
+
+\startitemize[packed]
+\item
+  Working on an iot device that calculate weight variations and blinking
+  to help people take theirs medicaments
+\item
+  Create a mobile application with react-native for the p-heal device
+\item
+  Refactor the backend to aws with serverless
+\stopitemize
+
+{\bf Big Data Media}
+
+\startitemize[packed]
+\item
+  Create a recommendation engine for a broadcaster.
+\item
+  Built a microservice to extract content from video.
+\item
+  Test the recommendation engine with unitetest and behave.
+\item
+  Searching for solution to improve the recommendation engine (tf/idf,
+  elasticsearch).
+\item
+  Create a cache system with redis to avoid collecting and fetching the
+  same data.
+\item
+  Collect data on users (time spended on article, time spend watching a
+  video\ldots{}) to rate articles and videos.
+\item
+  Python, kafka, aiohttp, sql, behave, unittest, react, docker, redis,
+  pyspark, pandas
+\stopitemize
+
+\subsubsection[title={Full Stack Developer - {\bf (Vesperia) } -
+{\bf (June 2016 - Aout 2017)} -
+(Luxembourg)},reference={full-stack-developer---vesperia---june-2016---aout-2017---luxembourg}]
+
+{\bf Doctena} - Render their mail responsive with ljml - Improve their
+javascript code base mainly angular and jquery - Resolve visual bugfix
+
+{\bf Logdirect} - Refactor front end code for different site, with
+jquery, gulp, css - Unittest made home framework with nodejs
+
+{\bf atHome} - Bulding static analyse tools with typescript (made home
+framework)
+
+\subsection[title={Education},reference={education}]
+
+\startdescription{Aug 2014-May 2015}
+  {\bf Java cloud computing}; STE-Formations(Liege)
+
+  \startitemize[packed]
+  \item
+    Learning advanced design pattern in java
+  \item
+    Algorithm course on paper
+  \item
+    database analyse and creation
+  \item
+    Advanced sql with postgresql (view, trigger, creating function) psql
+  \item
+    Building a sudoku
+  \stopitemize
+\stopdescription
+
+\startdescription{Aug 2012-May 2014}
+  {\bf Bac+2 Web developer}; IPSF(Liege)
+
+  \startitemize[packed]
+  \item
+    Learning html, css, jquery, php, mysql, wordpress (first year)
+  \item
+    learning poo, symfony2, version control (second year)
+  \item
+    Building website for asbl in symfony2 (second year)
+  \item
+    Creating a site for lawfirm with python(django) (final)
+  \stopitemize
+\stopdescription
+
+\subsection[title={Skills},reference={skills}]
+
+\startitemize[packed]
+\item
+  Languages:
+  \startitemize[packed]
+  \item
+    Python 5
+  \item
+    Javascript (es6) 4
+  \item
+    Typescript 3
+  \item
+    Ruby 3
+  \item
+    Bash 2
+  \item
+    Node 2
+  \item
+    Elisp 2
+  \item
+    Elixir 2
+  \item
+    Clojure 2
+  \item
+    Php 1
+  \item
+    Java 1
+  \stopitemize
+\item
+  Framework python:
+  \startitemize[packed]
+  \item
+    Django 3
+  \item
+    Flask 3
+  \item
+    Nikola 2
+  \item
+    Aiohttp 1
+  \stopitemize
+\item
+  Framework javascript:
+  \startitemize[packed]
+  \item
+    Vue 4
+  \item
+    Quasar 4
+  \item
+    React 3
+  \item
+    Redux 3
+  \item
+    React native 3
+  \item
+    Gatsby 3
+  \item
+    Jquery 2
+  \item
+    Angular 2
+  \stopitemize
+\item
+  Integrations:
+  \startitemize[packed]
+  \item
+    Css 3
+  \item
+    Stylus 3
+  \item
+    Bulma 3
+  \item
+    Sass 2
+  \item
+    Foundation 2
+  \item
+    Bootstrap 2
+  \item
+    Materialize 2
+  \stopitemize
+\item
+  Build tools:
+  \startitemize[packed]
+  \item
+    Webapck 3
+  \item
+    Brunch 2
+  \item
+    Gulp 2
+  \item
+    Grunt 2
+  \stopitemize
+\item
+  Servers:
+  \startitemize[packed]
+  \item
+    Nginx 2
+  \item
+    Apache 2
+  \stopitemize
+\item
+  Databases:
+  \startitemize[packed]
+  \item
+    Postgresql 3
+  \item
+    Mysql 2
+  \item
+    Sqlite 2
+  \item
+    Mongo 2
+  \item
+    Redis 3
+  \item
+    Dynamodb 3
+  \stopitemize
+\item
+  Tools:
+  \startitemize[packed]
+  \item
+    Emacs 5
+  \item
+    Git 4
+  \item
+    Aws 3
+  \item
+    Docker 3
+  \item
+    Google cloud 2
+  \item
+    Vagrant 2
+  \item
+    Jira 2
+  \item
+    Gitlab 3
+  \item
+    Github 2
+  \item
+    Bitbucket 2
+  \item
+    Jenkins 2
+  \stopitemize
+\item
+  Os:
+  \startitemize[packed]
+  \item
+    Ubuntu 3
+  \item
+    Debian 3
+  \item
+    Arch 3
+  \item
+    Redhat 1
+  \stopitemize
+\stopitemize
+
+\subsection[title={Extra},reference={extra}]
+
+\startitemize[packed]
+\item
+  Languages:
+  \startitemize[packed]
+  \item
+    French (native speaker)
+  \item
+    English (excellent)
+  \stopitemize
+\item
+  hobbies
+  \startitemize[packed]
+  \item
+    Webscraping, Machine learning, Game creation
+  \item
+    Reading
+  \item
+    Proxy http trafics from my webbrowser and try to understand what's
+    going on
+  \stopitemize
+\stopitemize
+
+\thinrule
+
+\startblockquote
+\useURL[url1][mailto:houbavince@gmail.com][][houbavince@gmail.com]\from[url1]
+• +32499316385 • 29 years old\crlf
+Quai de l'ourthe n 22 tilff - Liege, Belgium\crlf
+Website:
+\useURL[url2][https://silly-mclean-010d02.netlify.com/cv]\from[url2]
+\stopblockquote
+
+\stoptext

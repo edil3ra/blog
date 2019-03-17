@@ -180,7 +180,7 @@ const CvPage = ({ data }) => {
             {details.map(({ name, items }) => {
               return (
                 <div key={name}>
-                  <h5 classname="subtitle is-6">{name}</h5>
+                  <h5 className="subtitle is-6">{name}</h5>
                   <ul className={`${css.myListDetail}`}>
                     {items.map(item => {
                       return <li key={item}>{item}</li>
@@ -280,6 +280,16 @@ const CvPage = ({ data }) => {
           <div className={`${css.column} ${css.is12} ${css.paddingWrapper}`}>
             <h2 className="is-size-2 is-capitalized title">Industry</h2>
             {industryR}
+          </div>
+          <div>
+            <div>
+              <ul>
+                <li>Mauris a diam maecenas sed enim ut sem viverra aliquet eget sit amet tellus cras! Laoreet non curabitur gravida arcu ac tortor dignissim convallis aenean et tortor at risus viverra!</li>
+                <li>Ornare arcu odio ut sem nulla pharetra diam sit amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor! Id venenatis a, condimentum vitae sapien pellentesque habitant morbi tristique senectus?</li>
+                <li>Etiam erat velit, scelerisque in dictum non, consectetur a erat nam at lectus urna duis convallis convallis tellus, id interdum velit laoreet id donec? Hendrerit lectus a molestie lorem ipsum?</li>
+              </ul>
+              <a href="cv/resume.pdf"></a>
+            </div>
           </div>
           <div className={`${css.column} ${css.is12} ${css.paddingWrapper}`}>
             <h2 className="is-size-2 is-capitalized title">Education</h2>
