@@ -270,6 +270,51 @@ const CvPage = ({ data }) => {
     )
   })
   
+  const downloadR = (
+    <ul>
+      <li>
+        <a href="/cv/resume.html">
+          <span className={css.icon}>
+            <i className={`${css.fa} ${css.faHtml5}`}></i>
+          </span>
+          html version
+        </a>
+      </li>
+      <li>
+        <a href="/cv/resume.pdf">
+          <span className={css.icon}>
+            <i className={`${css.fa} ${css.faFilePdfO}`}></i>
+          </span>
+          pdf version
+        </a>
+      </li>
+      <li>
+        <a href="/cv/resume.tex">
+          <span className={css.icon}>
+            <i className={`${css.fa} ${css.faFileTextO}`}></i>
+          </span>
+          latex version
+        </a>
+      </li>
+      <li>
+        <a href="/cv/resume.docx">
+          <span className={css.icon}>
+            <i className={`${css.fa} ${css.faFileWordO}`}></i>
+          </span>
+          word version
+        </a>
+      </li>
+      <li>
+        <a href="/cv/resume.rtf">
+          <span className={css.icon}>
+            <i className={`${css.fa} ${css.faFileWordO}`}></i>
+          </span>
+          rtf version
+        </a>
+      </li>
+    </ul>
+  )
+
 
 
   return (
@@ -277,24 +322,20 @@ const CvPage = ({ data }) => {
       <SEO title="Home" keywords={[`cv`, `curcium vitale`, `software developer`, `Vincent houba`, 'houba vincent']} />
       <div>
         <section className={`${css.columns} ${css.isMultiline} ${css.sectionWrapper}`}>
-          <div className={`${css.column} ${css.is12} ${css.paddingWrapper}`}>
-            <h2 className="is-size-2 is-capitalized title">Industry</h2>
-            {industryR}
+          <div className="column is-12 content">
+            <h2 className={`${css.isSize2} ${css.isCapitalized} ${css.skillTitle} ${css.title}`}>Download</h2>
+            { downloadR }
           </div>
-          <div>
-            <div>
-              <ul>
-                <li>Mauris a diam maecenas sed enim ut sem viverra aliquet eget sit amet tellus cras! Laoreet non curabitur gravida arcu ac tortor dignissim convallis aenean et tortor at risus viverra!</li>
-                <li>Ornare arcu odio ut sem nulla pharetra diam sit amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor! Id venenatis a, condimentum vitae sapien pellentesque habitant morbi tristique senectus?</li>
-                <li>Etiam erat velit, scelerisque in dictum non, consectetur a erat nam at lectus urna duis convallis convallis tellus, id interdum velit laoreet id donec? Hendrerit lectus a molestie lorem ipsum?</li>
-              </ul>
-              <a href="cv/resume.pdf"></a>
-            </div>
-          </div>
-          <div className={`${css.column} ${css.is12} ${css.paddingWrapper}`}>
-            <h2 className="is-size-2 is-capitalized title">Education</h2>
-            {educationR}
-          </div>
+
+          {/* <div className={`${css.column} ${css.is12} ${css.paddingWrapper}`}> */}
+          {/*   <h2 className="is-size-2 is-capitalized title">Industry</h2> */}
+          {/*   {industryR} */}
+          {/* </div> */}
+          {/* <div className={`${css.column} ${css.is12} ${css.paddingWrapper}`}> */}
+          {/*   <h2 className="is-size-2 is-capitalized title">Education</h2> */}
+          {/*   {educationR} */}
+          {/* </div> */}
+
           <div className="column is-12">
             <h2 className={`${css.isSize2} ${css.isCapitalized} ${css.skillTitle} ${css.title}`}>Skills</h2>
             <div>
