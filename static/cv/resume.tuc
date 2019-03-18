@@ -45,6 +45,10 @@ utilitydata.job.passes.collected={
  ["itemgroup:itemize:1"]={
   { 7, 0 },
  },
+ ["itemgroup:itemize:10"]={
+  { 2, 0 },
+  { 3, 0 },
+ },
  ["itemgroup:itemize:2"]={
   { 3, 0 },
  },
@@ -52,18 +56,23 @@ utilitydata.job.passes.collected={
   { 7, 0 },
  },
  ["itemgroup:itemize:4"]={
-  { 5, 0 },
+  { 3, 0 },
  },
  ["itemgroup:itemize:5"]={
-  { 4, 0 },
+  { 2, 0 },
  },
  ["itemgroup:itemize:6"]={
-  { 9, 0 },
-  { 4, 0 },
+  { 1, 0 },
  },
  ["itemgroup:itemize:7"]={
-  { 2, 0 },
-  { 3, 0 },
+  { 5, 0 },
+ },
+ ["itemgroup:itemize:8"]={
+  { 4, 0 },
+ },
+ ["itemgroup:itemize:9"]={
+  { 9, 0 },
+  { 4, 0 },
  },
 }
 
@@ -114,7 +123,7 @@ utilitydata.structures.counters.collected={
   { 0 },
  },
  ["itemgroup:itemize"]={
-  { 0, 7, 3, 7, 5, 4, 9, 2 },
+  { 0, 7, 3, 7, 3, 2, 1, 5, 4, 9, 2 },
   { 0, 11, 0, 4, 0, 8, 0, 7, 0, 4, 0, 2, 0, 6, 0, 11, 0, 4, 0, 0, 2, 0, 3 },
  },
  ["linenote"]={
@@ -276,7 +285,7 @@ utilitydata.structures.lists.collected={
   ["references"]={
    ["block"]="bodypart",
    ["internal"]=10,
-   ["realpage"]=3,
+   ["realpage"]=4,
    ["reference"]="extra",
    ["section"]=8,
   },
